@@ -1,14 +1,108 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\documentclass[acmsmall,table,xcdraw]{acmart}
 
-\title{Software Engineering Practices in Bangladesh}
-\author{shuvopartho }
-\date{January 2020}
+
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{threeparttable}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{mathtools,cuted}
+\usepackage{tablefootnote}
+% \usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{longfbox}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{cleveref}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\newcommand{\topicquote}[1]{\\ \hspace*{2em}\emph{``#1"}}
+
+
+\title{
+Software Engineering Practices in Bangladesh
+}
+
+
+% \author{Partha Chakraborty}
+% \affiliation{%
+%   \institution{Bangladesh University of Engineering and Technology}
+%   \department{Department of Computer Science and Engineering}
+%   \city{Dhaka}
+%   \country{Bangladesh}
+% }
+% \email{shuvopartho@gmail.com}
+
+% \author{Rifat Shahriyar}
+% \affiliation{%
+%   \institution{Bangladesh University of Engineering and Technology}
+%   \department{Department of Computer Science and Engineering}
+%   \city{Dhaka}
+%   \country{Bangladesh}
+% }
+% \email{rifat@cse.buet.ac.bd}
+
+% \author{Anindya Iqbal}
+% \affiliation{%
+%   \institution{Bangladesh University of Engineering and Technology}
+%   \department{Department of Computer Science and Engineering}
+%   \city{Dhaka}
+%   \country{Bangladesh}
+% }
+% \email{anindya@cse.buet.ac.bd}
+
+
+
+
+\acmJournal{TMIS}
+\citestyle{acmauthoryear}
+
+
+\newcommand{\rcomment}[1] { \textcolor{red}{#1}}
+\newcommand{\boxtext}[1]{\begin{longfbox}#1\end{longfbox}}
+\newcommand{\eqrow}[1]{
+    \vbox{
+        \begin{equation}
+            \nonumber
+            \begin{split}
+                #1 \hspace{10em}
+            \end{split}
+        \end{equation}
+        } \\
+     }
+\newcommand{\surveyquote}[2]{\begin{adjustwidth}{1em}
+{0em}\emph{\\#1}. [\##2] \\\end{adjustwidth}}
 
 \begin{document}
-
+\begin{abstract}
+Dummy abstract
+\end{abstract}
 \maketitle
 
-\section{Introduction}
+\input{Sections/Introduction}
+% \input{Sections/RelatedWorks}
+% \input{Sections/ResearchSetting}
+% \input{Sections/Methodology}
+\input{Sections/Demographic}
+\input{Sections/Results}
+% \input{Sections/Implication}
+% \input{Sections/Validity}
+% \input{Sections/Conclusion}
 
+\bibliographystyle{ACM-Reference-Format}
+
+\bibliography{bibliography}
+
+\pagebreak
+\appendix
+
+    
 \end{document}

@@ -29,6 +29,7 @@
 %\acmDOI{10.1145/1122445.1122456}
 %\acmISBN{978-1-4503-9999-9/18/06}
 
+
 %\usepackage{graphicx}
 \usepackage{paralist}
 \usepackage{booktabs}
@@ -86,6 +87,7 @@
 %\usepackage{textcomp}
 \usepackage{booktabs}
 \usepackage{ccicons}
+
 
 
 
@@ -252,7 +254,7 @@ title={#2},fonttitle=\bfseries,#1}
 \usepackage{xcolor}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
-\usepackage{algorithmic}
+% \usepackage{algorithmic}
 \usepackage{textcomp}
 \usepackage{float}
 \usepackage{threeparttable}
@@ -263,18 +265,18 @@ title={#2},fonttitle=\bfseries,#1}
 \usepackage{tablefootnote}
 % \usepackage{xcolor}
 \usepackage{lipsum}
-\usepackage{subcaption}
+% \usepackage{subcaption}
 \usepackage{multirow}
 \usepackage{longfbox}
 \usepackage{makecell}
 \usepackage{longtable}
 \usepackage{changepage}
-\usepackage{cleveref}
+% \usepackage{cleveref}
 
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}
 \newcommand{\topicquote}[1]{\\ \hspace*{2em}\emph{``#1"}}
 \begin{document}
-\title{Professional Software Engineering Practices in a Small but Emerging Country: Do Those Differ from Other Countries?}
+\title{A Survey of Development Practices \& Processes in a Growth-Focused and Emerging Software Industry}
 \titlerunning{Software Engineering Practices in a Small but Emerging Country}
 %\shortcite{Topics of Developers' Discussions During COVID-19 Crsis}
 \author{Partha et al.}% <-this % stops a space
@@ -294,15 +296,85 @@ abstract
 \end{abstract}
 \keywords{survey}
 
-\input{Sections/Introduction}
-\input{Sections/RelatedWorks}
+%\input{Sections/Introduction}
+%\input{Sections/RelatedWorks}
 % \input{Sections/ResearchSetting}
 % \input{Sections/Methodology}
-\input{Sections/Demographic}
-\input{Sections/Results}
+%\input{Sections/Demographic}
+%\input{Sections/Results}
 % \input{Sections/Implication}
 % \input{Sections/Validity}
 % \input{Sections/Conclusion}
+
+\section{Introduction}
+We answer the following research questions:
+\begin{enumerate}[label=RQ\arabic{*}., leftmargin=25pt]
+    \item What development practices and processes are used by professional software developers in Bangladesh?
+    \item How do the development practices and processes differ between Bangladesh and other countries?
+\end{enumerate}
+
+\section{Related Work}
+\subsection{Studies of Development Practices and Processes}
+any survey that did not focus on specific region but tried to look at the theme in general.
+\subsection{Related Region-specific Studies}
+NZ, Turkey, Canada, etc. any previous study in Bangladesh?
+
+\section{Study Setup}
+overview
+\subsection{Participants}
+how the participants are selected, what is the response rate? 
+any incentives were provided to encourage participation?
+\subsection{Data Collection and Analysis}
+how was the data collected (Google form), how was the data analyzed (open coding for open-ended questions, statistical analysis for closed questions) see \url{https://ieeexplore.ieee.org/abstract/document/8658125}
+\section{Study Results}
+\subsection{Development Practices and Processes in Bangladesh (RQ1)}
+We divide this into four sub-questions:
+\begin{enumerate}
+    \item What software methodology are used in your project?
+    \item Which implementation technologies and tools are adopted by software
+development professionals?
+\item  What type of testing and deployment practices are used?
+\item How are the security and performance is ensured in a product of a company?
+\end{enumerate}
+\subsection{Comparison among countries (RQ2)}
+We do the comparison along the following dimensions:
+\begin{enumerate}
+    \item Development methods and practices
+    \item Implementation technologies
+    \item Quality assurance
+    \item Release and iterations
+\end{enumerate}
+
+\section{Discussions}
+\subsection{Summary of Results}
+now summarize the key finding - see Section 7.1 of \url{https://ieeexplore.ieee.org/abstract/document/8658125}
+
+\subsection{Analysis by Professions}
+summarize key findings by professions. see Section 7.2 of \url{https://ieeexplore.ieee.org/abstract/document/8658125}
+
+\subsection{Analysis by Experience}
+see Section 7.3 of \url{https://ieeexplore.ieee.org/abstract/document/8658125}
+
+\subsection{Analysis by Gender}
+summarize and compare the results by gender
+
+\section{Implications of Findings}
+what are the implications of findings? say for another emerging country or software professonals or companies like Microsoft, Google?
+
+\section{Threats to Validity}
+\subsection{Construct Validity}
+Construct validity threats concern the relation between theory and
+observations. 
+\subsection{Internal Validity}
+Threats to internal validity refer to how well the research is
+conducted.
+
+\subsection{External Validity}
+Threats to external validity compromise the confidence in stating
+whether the study results are applicable to other groups.
+
+\section{Conclusions}
+conclusions
 
 \begin{small}
 \bibliographystyle{abbrv}

@@ -1,5 +1,5 @@
 #TeXlipse project settings
-#Sat May 02 11:21:07 EDT 2020
+#Sat Oct 17 11:40:51 EDT 2020
 markTmpDer=true
 builderNum=2
 outputDir=
@@ -7,8 +7,8 @@ makeIndSty=
 bibrefDir=
 outputFormat=pdf
 tempDir=tmp
-mainTexFile=main.tex
-outputFile=SEBD.pdf
+mainTexFile=mainEMSE.tex
+outputFile=SEBDEMSE.pdf
 langSpell=en
 markDer=true
 srcDir=

@@ -272,7 +272,14 @@ title={#2},fonttitle=\bfseries,#1}
 \usepackage{longtable}
 \usepackage{changepage}
 % \usepackage{cleveref}
+\newtoggle{comment}
+\toggletrue{comment}
 
+\newcommand{\partha}[1] { 
+    \iftoggle{comment}{
+        \textcolor{red}{\\Partha: #1\\}
+     }
+}
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}
 \newcommand{\topicquote}[1]{\\ \hspace*{2em}\emph{``#1"}}
 \begin{document}
@@ -296,15 +303,6 @@ abstract
 \end{abstract}
 \keywords{survey}
 
-%\input{Sections/Introduction}
-%\input{Sections/RelatedWorks}
-% \input{Sections/ResearchSetting}
-% \input{Sections/Methodology}
-%\input{Sections/Demographic}
-%\input{Sections/Results}
-% \input{Sections/Implication}
-% \input{Sections/Validity}
-% \input{Sections/Conclusion}
 
 \section{Introduction}
 we will say there was no previous study on how software industry in an emerging environment works, the challenges they face and the practices they adopt. we will say we fill this gap by taking the software industry in BD as a case study, since BD is a rapidly developing country and part of this rapid development is attributed to its emerging software industry. as such the data from the industry of BD can be insightful for similar other countries as well as for companies who normally look for emerging economies as a place for growth (e.g, Apple and Google both are focusing more and more on India and China for their expansion and revenue increase, because both of those are emerging - although both are much bigger economy than BD, etc.)
@@ -315,19 +313,20 @@ We answer the following research questions:
     \item How do the development practices and processes differ between Bangladesh and other countries?
 \end{enumerate}
 
-\section{Related Work}
-\subsection{Studies of Development Practices and Processes}
-any survey that did not focus on specific region but tried to look at the theme in general.
-\subsection{Related Region-specific Studies}
-NZ, Turkey, Canada, etc. any previous study in Bangladesh?
-
-\section{Study Setup}
-overview
-\subsection{Participants}
-how the participants are selected, what is the response rate? 
-any incentives were provided to encourage participation?
-\subsection{Data Collection and Analysis}
-how was the data collected (Google form), how was the data analyzed (open coding for open-ended questions, statistical analysis for closed questions) see \url{https://ieeexplore.ieee.org/abstract/document/8658125}
+% \section{Related Work}
+% \subsection{Studies of Development Practices and Processes}
+% any survey that did not focus on specific region but tried to look at the theme in general.
+% \subsection{Related Region-specific Studies}
+% NZ, Turkey, Canada, etc. any previous study in Bangladesh?
+\input{Sections/RelatedWorks}
+% \section{Study Setup}
+% overview
+% \subsection{Participants}
+% how the participants are selected, what is the response rate? 
+% any incentives were provided to encourage participation?
+% \subsection{Data Collection and Analysis}
+% how was the data collected (Google form), how was the data analyzed (open coding for open-ended questions, statistical analysis for closed questions) see \url{https://ieeexplore.ieee.org/abstract/document/8658125}
+\input{Sections/study_setup}
 \section{Study Results}
 \subsection{Development Practices and Processes in Bangladesh (RQ1)}
 We divide this into four sub-questions:
@@ -347,9 +346,12 @@ We do the comparison along the following dimensions:
     \item Release and iterations
 \end{enumerate}
 
+\input{Sections/study_results}
+
 \section{Discussions}
-\subsection{Summary of Results}
-now summarize the key finding - see Section 7.1 of \url{https://ieeexplore.ieee.org/abstract/document/8658125}
+\input{Sections/challenges_and_opportunities}
+
+
 
 \subsection{Analysis by Professions}
 summarize key findings by professions. see Section 7.2 of \url{https://ieeexplore.ieee.org/abstract/document/8658125}
@@ -378,13 +380,19 @@ whether the study results are applicable to other groups.
 \section{Conclusions}
 conclusions
 
+
+%\input{Sections/Introduction}
+%\input{Sections/RelatedWorks}
+% \input{Sections/ResearchSetting}
+% \input{Sections/Methodology}
+%\input{Sections/Demographic}
+%\input{Sections/Results}
+% \input{Sections/Implication}
+% \input{Sections/Validity}
+% \input{Sections/Conclusion}
 \begin{small}
 \bibliographystyle{abbrv}
 %\bibliography{bibtex}
 \bibliography{bibliography}
 \end{small}
-
-
-
-
 \end{document}

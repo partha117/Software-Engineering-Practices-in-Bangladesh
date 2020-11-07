@@ -61,9 +61,17 @@
 \def\fig {Figure~}
 \def\figs {Figures~}
 \usepackage{subfig}
-
+\newcounter{finding_counter}
+\setcounter{finding_counter}{1}
 \newcommand{\rcomment}[1] { \textcolor{red}{#1}}
-\newcommand{\boxtext}[1]{\begin{longfbox}#1\end{longfbox}}
+\newcommand{\comparisoncell}[2]{
+\parbox{#1\textwidth}{\vspace{3pt} #2 \vspace{2pt}}
+}
+\newcommand{\boxtext}[1]{
+    \begin{tcolorbox}
+        \textbf{Observation \arabic{finding_counter}:} #1 \stepcounter{finding_counter}
+    \end{tcolorbox}
+}
 \newcommand{\eqrow}[1]{
     \vbox{
         \begin{equation}

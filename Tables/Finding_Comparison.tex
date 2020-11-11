@@ -1,26 +1,91 @@
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
-\begin{table}[]
+\begin{table}[h]
+\caption{Comparison of security, performance, scalability between our findings and prior findings}
 \begin{tabular}{llll}
 \hline
-\multicolumn{1}{c}{Practices}                                                                      & Our Study                                                                                                                                                                                                                                            & Prior Study                                                                                                                                                                                                                                                                                                  & \multicolumn{1}{c}{Comparison}                                                                                                                 \\ \hline 
-\multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.1\textwidth}{Security Practices}}} & \multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.2\textwidth}{(1) 3.64\% of respondents  do not use any security measures in their products. (2) The use of security architecture and security testing as a security measure is not prevalent in the Bangladesh SE industry.}}} & \multicolumn{1}{l|}{\comparisoncell{0.31}{ Farvin et al.\cite{Farvin2016} found that in the Malaysian SE industry  31\% of respondents think it is not required to add security in requirement analysis  of a product}}                                                                                                                               & \multirow{3}{*}{\parbox{0.23\textwidth}{We found that in the Bangladesh SE industry, the practice of `no security' measure is less than the other countries. However, in the security testing, the Bangladesh SE industry has similarities with the Turkish and  New Zealand SE industries. Only a few participants in our study reported practicing security testing.}} \\ \cline{3-3}
-\multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                & \multicolumn{1}{l|}{\comparisoncell{0.31}{ Bahl et al. reported that due to misalignment with organization design, goal, and strategy in some Indian software firms, security measures are not practiced.}}                                                                                                                          &                                                                                                                                                \\ \cline{3-3}
-\multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                & \multicolumn{1}{l|}{\comparisoncell{0.31}{Basharat et al.\cite{Basharat2013} reported a sense of false security in the small software industry, and standard security practices are hardly followed. This can be one reason why some Bangladesh software industry respondents do not use any security measures.}} &                                                                                                                                                \\ \cline{3-3}
-\multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                &
-\multicolumn{1}{l|}{\comparisoncell{0.31}{In the Turkish SE industry\cite{Garousi2015}, security testing is the least practiced than all other kinds of testing.}} &                                                                                                                                        \\\cline{3-3}
+\multicolumn{1}{c}{\textbf{Practices}}& \textbf{Our Study}& \textbf{Prior Study}&\multicolumn{1}{c}{\textbf{Comparison}}\\ \hline 
 
-\multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                &
-\multicolumn{1}{l|}{\comparisoncell{0.31}{Sung et al.\cite{Sung2006} found that in New Zealand, the practice of security testing is negligible compared to functional testing practices.}} &                                                                                                                                        \\\hline
+% % 1. methodology
+% \multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.1\textwidth}{What software methodology are used in your project?}}
+% } 
+% & 
+% \multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.22\textwidth}{
+% (1) Agile and scrum are the two most used method for development. (2) An appreciable respondents answered that plain text and story board for requirements gathering which shows that tools for requirements collection yet are not used usually in Bangladesh. (3) Implementation stage gets more preference than system design, planning and testing in Bangladesh.
+% }}} 
+% & 
+% \multicolumn{1}{l|}{\comparisoncell{0.31}{The usage of the scrum and waterfall is high in New Zealand \cite{Wang2018} and Turkey \cite{Garousi2015} respectively. Software developments in Malaysia are predominantly regulated through ad-hoc approach and the agile methodologies \cite{Almomani2015}.}}                                  & 
+% \multirow{3}{*}{\parbox{0.23\textwidth}{
+% We have perceived that in the Bangladesh SE industry, there exists an ad-hoc based software development practice which might similar to the practice in Malaysia nonetheless the regions like Japan, Europe, etc. give more importance in system planning and design which makes those region specific SE industry more stable.
+% }} \\ \cline{3-3}
+% \multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                & \multicolumn{1}{l|}{\comparisoncell{0.31}{
+% The textual description of specifying requirements is a firm favourite in Netherlands \cite{Vonken2012}.
+% }}                                                                                                                          &                                                                                                                                                \\ \cline{3-3}
+% \multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                & \multicolumn{1}{l|}{\comparisoncell{0.31}{
+% Specified design documentations are well-practiced rather than just implementation without well-defined planning and documentation in India, Japan, and Europe \cite{Cusumano2003}. However,
+% most time is spent on implementation and coding in New Zealand \cite{Wang2018}.
+% }} &                                                                        \\ \hline
 
-\multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.12\textwidth}{Performance Practices}}} & \multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.2\textwidth}{(1) Performance testing and peer review are the two least practiced performance measure in the Bangladesh SE industry (2) For performance; the Bangladesh SE industry is largely dependent on monitoring tools and software testing.}}} & \multicolumn{1}{l|}{\comparisoncell{0.31}{Phillips et al.\cite{Phillips2003} found that performance testing is a common practice in the New Zealand SE industry.}}                                                                                                                                                                                     & \multirow{3}{*}{\parbox{0.23\textwidth}{In comparison to New Zealand and the Turkish SE industry, performance testing is negligible in Bangladesh. Also, in the case of peer review, the Bangladesh SE industry trend is opposite to the Turkish SE industry.}} \\ \cline{3-3}
-\multicolumn{1}{l|}{}                                       & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                                  & \multicolumn{1}{l|}{\comparisoncell{0.31}{In the Canadian SE industry\cite{Garousi2013}, developers reported that the lack of performance testing is the main challenge in Software maintenance.}}                                                                                                                                                     &                                                                                                                                                                                                                                          \\ \cline{3-3}
-\multicolumn{1}{l|}{}                                       & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                                  & \multicolumn{1}{l|}{\comparisoncell{0.31}{40\% of participants reported performance testing in the Turkish SE industry survey by Garosi et al.\cite{Garousi2015} Also, peer review is a common practice among Turkish developers. However, architectural / design reviews are rarely practiced there.}}                                                                                                                                                     &                                                                                                                                                                                                                                          \\ \cline{3-3}
+
+% % 2. technologies
+% \multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.1\textwidth}{Which implementation technologies and tools are adopted by software development professionals?}}
+% } 
+% & 
+% \multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.22\textwidth}{
+% (1) Majority of our participants were related to the various types of web-based applications which conveys the market demand of web-based apps in Bangladesh. (2) Linux is mainly used for development purpose while macOS is highly preferred by managers. (3) Javascript and Java are two mostly used programming languages in Bangladesh SE industry since the demand of web-based services as well as mobile apps.
+% }}} 
+% & 
+% \multicolumn{1}{l|}{\comparisoncell{0.31}{
+% There exists a high level focus on web-based platforms in the software industry of New Zealand \cite{Wang2018}.
+% }}                                  & 
+% \multirow{3}{*}{\parbox{0.23\textwidth}{
+% We have observed that web-based platforms have widespread demand among different countries along with Bangladesh. Also in using programming languages like Java and python, Bangladesh has similarities with Turkey but are different from New Zealand.  
+% }} \\ \cline{3-3}
+% \multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                & \multicolumn{1}{l|}{\comparisoncell{0.31}{
+% Windows is highly preferable among developers of New Zealand \cite{Wang2018}.
+% }}                                                                                                                          &                                                                                                                                                \\ \cline{3-3}
+% \multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                & \multicolumn{1}{l|}{\comparisoncell{0.31}{
+% The use of Java as a programming language is spacious in Turkey \cite{Garousi2015}. However, in New Zealand, the usage rate of Java as well as python ranks quite low \cite{Wang2018}.
+% }} &                                                                        \\ \hline
 
 
-\multicolumn{1}{l|}{}                                       & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                                  & \multicolumn{1}{l|}{\comparisoncell{0.31}{In the Pakistan SE industry\cite{Jahan2019}, performance testing is seldom used. Only 5\% of participants reported using performance testing in the survey of Shah Jahan et al.}}                                                                                                                         &                                                                                                                                                                                                                                          \\ \hline
+% 3. testing
+\multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.1\textwidth}{What type of testing and deployment practices are used?}}
+} 
+& 
+\multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.22\textwidth}{
+
+
+}}} 
+& 
+\multicolumn{1}{l|}{\comparisoncell{0.31}{
+
+
+}}                                  & 
+\multirow{3}{*}{\parbox{0.23\textwidth}{
+
+
+}} \\ \cline{3-3}
+\multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                & \multicolumn{1}{l|}{\comparisoncell{0.31}{
+
+
+
+}}                                                                                                                          &                                                                                                                                                \\ \cline{3-3}
+\multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                & \multicolumn{1}{l|}{\comparisoncell{0.31}{
+
+
+
+}} &                                                                        \\ \hline
+
+
+% 4. security
+\multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.1\textwidth}{How are the security and performance is ensured in a product of a company?}}} & \multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.22\textwidth}{(1)
+A handful of participants reported practicing `no security'. However, security architecture and security testing as a security measure are not prevalent in the Bangladesh SE industry. (2) Performance testing and peer review are the two least practiced performance measure in the Bangladesh SE industry. (3) Cloud service and architecture are two of the top three scalability measures. However, containerization technologies are not very popular in Bangladesh.
+}}} & \multicolumn{1}{l|}{\comparisoncell{0.31}{\vspace{13pt}Security testing is found to be the least practiced in the software industry in Turkey\cite{Garousi2015}, Malaysia\cite{Farvin2016}, India\cite{Bahl2011}, and New Zealand\cite{Sung2006}}}                                                                                                                               & \multirow{3}{*}{\parbox{0.23\textwidth}{We found that in the Bangladesh SE industry, the practice of `no security' measure is less than the other countries. Though the practice of security testing Bangladesh has similarities with other countries, it lags behind all the countries except Pakistan in performance testing. Like, the matured and grown software industries of Finland and Turkey, cloud service is a popular measure in Bangladesh.}} \\ \cline{3-3}
+\multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                & \multicolumn{1}{l|}{\comparisoncell{0.31}{\vspace{13pt}Performance testing is a common practice in the Canadian\cite{Garousi2013}, Turkish\cite{Garousi2015}, and New Zealand\cite{Phillips2003} SE industry. However, it is hardly practiced in the Pakistan\cite{Jahan2019} SE industry. Also, peer review is a common practice among Turkish\cite{Garousi2015} developers.}}                                                                                                                          &                                                                                                                                                \\ \cline{3-3}
+\multicolumn{1}{l|}{}                                                                              & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                & \multicolumn{1}{l|}{\comparisoncell{0.31}{\vspace{13pt}The use of cloud services and microservice architecture to ensure scalability is prevalent in the Finnish\cite{Laihonen2018} SE industry. Hussain et al. found that in the New Zealand\cite{Hussain2017} SE industry, the use of containerization technologies is increasing.}} &                                                                                                                                                \\ \hline
+
 
 \end{tabular}
-\caption{Comparison between our findings and prior findings}
+\label{table:open_ended_comparison}
 \end{table}
-% Partha Working on it

@@ -1,0 +1,62 @@
+\newcolumntype{b}{X}
+\newcolumntype{v}{>{\hsize=.03\hsize}X}
+\newcolumntype{m}{>{\hsize=.2\hsize}X}
+\newcolumntype{y}{>{\hsize=.33\hsize}X}
+\begin{table}[htbp]
+    \centering
+    \caption{Highlights of Findings from Survey Closed Questions by Profession}
+    \begin{tabularx}{\textwidth}{v|b}
+        \hline
+        \textbf{No}     & \textbf{Question}  \\ \hline
+        13 & What types of software testing practices do you use? \newline Functional testing = FT, Performance testing = PT, Unit testing = UT, User acceptance testing = UAT, GUI testing = GT
+        {
+        \begin{tabularx}{0.92\textwidth}{yyy}
+         & top1 (\%) & top2 (\%) \\
+        Architect & FT (25.0)  & PT (25.0)  \\
+        Business analyst & UT (40.0)  & FT (20.0)  \\
+        Data Engineer & PT (50.0)  & UT (50.0)  \\
+        Developer & UT (27.81)  & FT (23.53)  \\
+        Manager & UT (23.33)  & UAT (21.11)  \\
+        R\&D & PT (50.0)  & UT (50.0)  \\
+        SQA & FT (20.93)  & PT (16.28)  \\
+        Team Lead & FT (33.33)  & GT (33.33)  \\
+        Trainer & FT (25.0)  & GT (25.0)  \\
+
+        \end{tabularx}
+        }\\ \hline
+        
+        14 & What is the level of automated testing in your projects?\newline 1) Architect: \textbf{\textit{3.0, 100.0\% } } 2) Business analyst: \textbf{\textit{1.0, 50.0\% } } 3) Data Engineer: \textbf{\textit{2.0, 100.0\% } } 4) Developer: \textbf{\textit{5.0, 40.66\% } } 5) Manager: \textbf{\textit{2.0, 36.36\% } } 6) R\&D: \textbf{\textit{3.0, 50.0\% } } 7) SQA: \textbf{\textit{3.0, 44.44\% } } 8) Team Lead: \textbf{\textit{4.0, 100.0\% } } 9) Trainer: \textbf{\textit{4.0, 100.0\% } } 10) UXD: \textbf{\textit{4.0, 100.0\% } }  \\ \hline
+        
+        15 & Which tools do you use for testing and quality assurance?
+        {
+        \begin{tabularx}{0.92\textwidth}{yyy}
+         & top1 (\%) & top2 (\%) \\
+        Architect & Selenium (50.0)  & XUnit (50.0)  \\
+        Business analyst & JenKins (33.33)  & Selenium (33.33)  \\
+        Data Engineer & XUnit (100.0)  &  \\
+        Developer & XUnit (35.14)  & Selenium (25.68)  \\
+        Manager & XUnit (34.88)  & JenKins (25.58)  \\
+        R\&D & Selenium (50.0)  & XUnit (50.0)  \\
+        SQA & Selenium (43.75)  & XUnit (25.0)  \\
+        Team Lead & Selenium (50.0)  & XUnit (50.0)  \\
+        Trainer & JenKins (100.0)  &  \\
+
+        \end{tabularx}
+        } \\ \hline
+        
+        16 & Which tools do you use for continous deployment? \newline
+        AWS codeDeploy = AC, Open Source server = OSS
+        {
+        \begin{tabularx}{0.92\textwidth}{yyy}
+         & top1 (\%) & top2 (\%) \\
+        Business analyst & Jenkins (100.0)  &  \\
+        Developer & AC (25.45)  & Others (25.45)  \\
+        Manager & Jenkins (30.0)  & AC (23.33)  \\
+        R\&D & OSS (100.0)  &  \\
+        SQA & Bamboo (60.0)  & AC (40.0)  \\
+        UXD & AC (100.0)  &  \\
+        \end{tabularx}
+        } \\ \hline
+    \end{tabularx} 
+    \label{table:analysis by profession part3}
+\end{table}

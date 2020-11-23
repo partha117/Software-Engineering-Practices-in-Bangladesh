@@ -283,11 +283,11 @@ title={#2},fonttitle=\bfseries,#1}
 \newtoggle{comment}
 \toggletrue{comment}
 
-\newcommand{\partha}[1] { 
-    \iftoggle{comment}{
-        \textcolor{red}{\\Partha: #1\\}
-     }
-}
+\newcommand{\partha}[1] {\textcolor{red}{\textbf{[Partha: #1]}}}
+\newcommand{\anindya}[1] { \textcolor{green}{\textbf{[Anindya: #1]}}}
+\newcommand{\khalid}[1]{\textcolor{blue}{\textbf{[Khalid: #1]}}}
+
+
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}
 \newcommand{\topicquote}[1]{\\ \hspace*{2em}\emph{``#1"}}
 \begin{document}

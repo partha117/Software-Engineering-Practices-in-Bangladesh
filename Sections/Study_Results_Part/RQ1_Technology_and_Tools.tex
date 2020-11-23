@@ -1,6 +1,6 @@
 \subsubsection{Which implementation technologies and tools are adopted by software development professionals?}
 \label{tools}
-
+\anindya{Implementation or development??}
 Our survey included five questions to find technologies and tools that are adopted by software development professionals. To answer this question fully, we report the following results:
 
 \begin{itemize}
@@ -13,7 +13,7 @@ Our survey included five questions to find technologies and tools that are adopt
 
 
 \paragraph{Technology Platforms}
-Participants were allowed to choose multiple options. As shown in Figure \ref{fig:platforms}, most of our survey respondents (80\%) work in web platform. The rests are mobile (45\%), Desktop (30\%), Embedded/IOT (8\%). This result shows that clients of software products heavily rely on web-based services. We have conducted a cross aspect analysis to identify any relationship between the technology platform and the requirement gathering process. The bubble charts in Figure \ref{fig:requirement technology cross analysis} visualize the cross-aspect analysis. It is clear from Figure \ref{fig:requirement technology cross analysis} that the requirement gathering process is mostly practiced in GUI based development (e.g., web, desktop, mobile).
+Participants were allowed to choose multiple options. As shown in Figure \ref{fig:platforms}, most of our survey respondents (80\%) work for the web platform. The rests are mobile (45\%), desktop (30\%)\anindya{is it the best name?}\khalid{It was one of the choices of this closed question}, embedded/IoT (8\%). Interestingly, from the 2020 survey of JetBrains \cite{JetBrains2020}, we have observed quite a similar result. The survey shows that websites are the most common type of application developers work on, and the web platform is the most preferable and popular to develop, followed by desktop and mobile. This result shows that clients of software products heavily prefer or need web-based services. We have conducted a cross-aspect analysis to identify any relationship between the technology platform and the requirement gathering process. The bubble charts in Figure \ref{fig:requirement technology cross analysis} visualize the cross-aspect analysis. It is clear from Figure \ref{fig:requirement technology cross analysis} that the requirement gathering process is mostly practiced in GUI based development (e.g., web, desktop, mobile).
 
 \begin{figure}[h]
 \centering
@@ -29,11 +29,11 @@ Participants were allowed to choose multiple options. As shown in Figure \ref{fi
   \label{fig:requirement technology cross analysis}
 \end{figure}
 
-\boxtext{Web based software services have market demand in a great degree in Bangladesh.}
+\boxtext{Web based software services top the list of development technologies.}
 
 
 \paragraph{Operating Systems}
-In our survey, as per Figure \ref{fig:os}, we have found that most of our respondents replied that they use Linux based operating system (56\%) as a primary operating system for their development. The second best used operating system is windows (45\%) and 28\% of the respondents use MacOS. We anticipated that the use of OS might be related to professional experience. Senior/expert developers may prefer Linux over another operating system as both usage rate of Linux among participants and participation of developers are high. We have conducted the Mann Whitney U test, and our anticipation is right (p=0.024). Senior developers prefer Linux over other operating systems.
+In our survey, as per Figure \ref{fig:os}, we have found that most of our respondents replied that they use Linux based operating system (56\%) as a primary operating system for their development. The second frequently used operating system is Windows (45\%) and 28\% of the respondents use MacOS. We observed similar scenarios in the 2018 and 2019 StackOverflow (SO) surveys \cite{StackoverflowSurvey2018,StackoverflowSurvey2019}. However, Windows ranked first in the 2020 survey of both SO and JetBrains \cite{StackoverflowSurvey2020, JetBrains2020}. The game-changing phenomenon may be related to the newly included WSL (Windows Subsystem for Linux). This feature allows users to perform almost any Linux-specific task on Windows. We anticipated that the use of OS might be related to professional experience. Among the participants, senior/expert developers have higher rates of Linux usage. This suggests that senior/expert developers may prefer Linux over other operating systems. \anindya{The last line is not clear.}\partha{rephrased}. We have conducted the Mann Whitney U test and our anticipation was found correct ($p=0.024$). %Senior developers prefer Linux over other operating systems.
 
 \begin{figure}[h]
 \centering
@@ -44,7 +44,7 @@ In our survey, as per Figure \ref{fig:os}, we have found that most of our respon
 
 
 \paragraph{Programming Languages}
-According to Figure \ref{fig:languages}, around 65\% and 60\% of our respondents use Javascript and Java respectively which are two mostly used languages in Bangladesh. These result seems expected as both Javascript and Java are popular for web and mobile platforms respectively and a great percentage of our survey participants develop for both web and mobile platforms discussed earlier in this section. Other languages like php (25\%), python (25\%), c\# (18\%) are also used which indicates that the software engineers are not disposed towards a single specific language. Also the choice of programming languages used for development can have important inferences for the testing practices of a software company. We observed that users using mobile and web platforms mostly use Java and Javascript as programming languages. However, our observation is not statistically significant (p=0.1). Though the use of the operating system is influenced by programming language (e.g., Swift and macOS), we have not found any relation between the choice of programming language and operating system.
+According to Figure \ref{fig:languages}, around 65\% and 60\% of our respondents use Javascript and Java, respectively which are the two most used languages in Bangladesh. This result seems expected as both Javascript and Java are popular for web and mobile platforms and a great percentage of our survey participants develop for both web and mobile platforms as discussed earlier in this section. Other languages like Php (25\%), Python (25\%), and C\# (18\%) are also used which indicates that the software engineers are not biased towards a single specific language. Our survey result matches with the last two years' Stackoverflow survey and the Github stat. In all of the cases, Javascript is the most used language, followed by Java and Python \cite{StackoverflowSurvey2020, StackoverflowSurvey2019, GithubStat}. The choice of programming languages used for development can have important influence on the testing practices of a software company. We observed that users using mobile and web platforms mostly use Java and Javascript as programming languages. However, this is not statistically significant ($p=0.1$). Though the use of the operating system is influenced by programming language (e.g., Swift and macOS), we have not found any relation between the choice of programming language and the operating system.
 \partha{Is figure necessary for the above claim?}
 
 \begin{figure}[h]
@@ -55,7 +55,7 @@ According to Figure \ref{fig:languages}, around 65\% and 60\% of our respondents
 \end{figure}
 
 \paragraph{Frameworks used in development}
-As shown in Figure \ref{fig:frameworks}, variety of frameworks have been used during development. Spring boot (37\%) is the mostly used framework in the Bangladesh's software industry which is aligned with the result of the usage rate of Java corresponding to Figure \ref{fig:languages}. Since Javascript is mostly used language of our respondents, they use various of Javascript frameworks like react, nodejs, angular, express, etc. at appreciable percentage. ASP.NET, Django and Laravel each are used in same proportion based on around 15\% of our respondents. React, Swift, Ruby on Rails, Nodejs, etc. are comparatively less used. Other than these, lots of various frameworks like Cocoa, Meteor, TestNG, Relay, Appium, CakePHP, etc. are also used in a comparatively negligible portion agglomerated in the category named others. For web development, Django and Spring frameworks are mostly used in Bangladesh (p=0.04).
+As shown in Figure \ref{fig:frameworks}, a variety of frameworks have been used during development. Spring boot (37\%) is the most used framework in Bangladesh software industry which is aligned with the result of the usage rate of Java corresponding to Figure \ref{fig:languages}. Since Javascript is the most used language of our respondents, they use various Javascript frameworks such as React, Nodejs, angular, express, etc. at an appreciable percentage. ASP.NET, Django, and Laravel each are used in the same proportion based on around 15\% of our respondents. React, Swift, Ruby on Rails, Nodejs, etc. are comparatively less used. Other than these, lots of frameworks such as Cocoa, Meteor, TestNG, Relay, Appium, CakePHP, etc. are also used in a comparatively negligible portion. These are combinedly presented in the category named others. For web development, Django and Spring frameworks are mostly used in Bangladesh ($p=0.04$). We have compared our results with the Stackoverflow 2016 to 2020 survey\cite{StackoverflowSurvey2017, StackoverflowSurvey2018, StackoverflowSurvey2019, StackoverflowSurvey2020}. The only common framework in the top five list in both surveys is ASP.NET. In the stack overflow survey, we noticed that JavaScript-based frameworks (e.g., Jacqueline, Angular, React, Node JS) occupy the top positions (top five), which is missing our survey.
 
 \begin{figure}[h]
 \centering
@@ -66,7 +66,7 @@ As shown in Figure \ref{fig:frameworks}, variety of frameworks have been used du
 
 
 \paragraph{IDE's used by the respondent's}
-According to Figure \ref{fig:IDEs}, IntelliJ, a Java integrated development environment for developing computer software for enterprise, mobile, and web development used by most of the respondents (43\%). The other IDEs used in SE industries are: visual studio (30\%), Eclipse (24\%), PyCharm (17\%), NetBeans (11\%), Android Studio (7\%).
+According to Figure \ref{fig:IDEs}, IntelliJ, a Java integrated development tool for developing software for the enterprise, mobile, and web application, is used by most of the respondents (43\%). The other IDEs used in SE industries are Visual Studio (30\%), Eclipse (24\%), PyCharm (17\%), NetBeans (11\%), and Android Studio (7\%).
 
 \begin{figure}[htbp]
 \centering

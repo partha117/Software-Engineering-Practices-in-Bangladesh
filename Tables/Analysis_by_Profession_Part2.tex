@@ -1,72 +1,37 @@
-\newcolumntype{b}{X}
+% \newcolumntype{b}{X}
 \newcolumntype{v}{>{\hsize=.03\hsize}X}
 \newcolumntype{m}{>{\hsize=.2\hsize}X}
 \newcolumntype{y}{>{\hsize=.33\hsize}X}
-\begin{table}[htbp]
+\begin{table}[!ht]
     \centering
     \caption{Highlights of Findings from Survey Closed Questions by Profession}
     \begin{tabularx}{\textwidth}{v|b}
         \hline
         \textbf{No}     & \textbf{Question}  \\ \hline
-        9 & Which of the following technologies do you have experience working in?\newline
+        7 & Which of the followings do you use for requirements gathering?\newline
+        GUI prototype = GP, Grooming seasons = GS, Plain Text = PT, Story board = SB, Use Case = UC
         {
         \begin{tabularx}{0.92\textwidth}{yyy}
-        \\
+         \\
          & top1 (\%) & top2 (\%) \\
-        Architect & Mobile (50.0)  & Web (50.0)  \\
-        Business analyst & Desktop (33.33)  & Mobile (33.33)  \\
-        Data Engineer &  Data Engineering (50.0)  & Back End (50.0)  \\
-        Developer & Web (49.39)  & Mobile (26.83)  \\
-        Manager & Web (35.29)  & Mobile (27.94)  \\
-        R\&D & Web (66.67)  & Mobile (33.33)  \\
-        SQA & Web (40.91)  & Mobile (31.82)  \\
-        Team Lead & Desktop (50.0)  & Web (50.0)  \\
-        Trainer & Desktop (33.33)  & Mobile (33.33)  \\
-        UXD & Web (100.0)  &  \\
-
+        Business analyst & GP (22.22)  & GS (22.22)  \\
+        Data Engineer & PT (33.33)  & SB (33.33)  \\
+        Developer & PT (26.2)  & SB (22.99)  \\
+        Manager & GS (20.48)  & SB (20.48)  \\
+        R\&D & GS (33.33)  & SB (33.33)  \\
+        SQA & UC (27.78)  & GS (22.22)  \\
+        Team Lead & GP (33.33)  & SB (33.33)  \\
+        Trainer & GP (25.0)  & PT (25.0)  \\
+        UXD & GP (50.0)  & UC (50.0)  \\
         \end{tabularx}
-        }\\ \hline
-        
-        10 & What is the primary operating system you are developing on?\newline
-        {\begin{tabularx}{0.92\textwidth}{yyy}
-         & top1 (\%) & top2 (\%) \\
-        Architect & Linux (66.67)  & MacOS (33.33)  \\
-        Business analyst & Windows (66.67)  & Linux (33.33)  \\
-        Data Engineer & MacOS (100.0)  &  \\
-        Developer & Linux (42.86)  & Windows (34.59)  \\
-        Manager & Linux (52.27)  & Windows (25.0)  \\
-        R\&D & Linux (50.0)  & Windows (50.0)  \\
-        SQA & Windows (56.25)  & Linux (25.0)  \\
-        Team Lead & Windows (100.0)  &  \\
-        Trainer & Others (100.0)  &  \\
-        UXD & Linux (50.0)  & Windows (50.0)  \\
-
-        \end{tabularx}
-        }\\ \hline
-        
-        11 & Which programming languages are you using?\newline
-        {
-        \begin{tabularx}{0.92\textwidth}{yyy}
-         & top1 (\%) & top2 (\%) \\
-        Architect & Java (100.0)  &  \\
-        Business analyst & JavaScript (40.0)  & Java (20.0)  \\
-        Data Engineer & Java (25.0)  & Python (25.0)  \\
-        Developer & JavaScript (31.75)  & Java (28.44)  \\
-        Manager & JavaScript (26.74)  & Java (20.93)  \\
-        R\&D & Java (66.67)  & Python (33.33)  \\
-        SQA & Java (24.0)  & C\# (20.0)  \\
-        Team Lead & Java (25.0)  & C\# (25.0)  \\
-        Trainer & Java (25.0)  & Python (25.0)  \\
-        UXD & JavaScript (100.0)  &  \\
-        \end{tabularx}
-        }\\ \hline
-        
+        }
+        \\ \hline
         12 & Which frameworks are you using? \newline
         {
         \begin{tabularx}{0.92\textwidth}{yyy}
          & top1 (\%) & top2 (\%) \\
         Architect & Spring (100.0)  &  \\
-        Business analyst & Spring (16.67)  & React (16.67)  \\
+        Business An. & Spring (16.67)  & React (16.67)  \\
         Developer & Spring (26.61)  & Others (13.71)  \\
         Manager & Spring (23.73)  & Others (13.56)  \\
         R\&D & Spring (66.67)  & Django (33.33)  \\
@@ -76,7 +41,6 @@
 
         \end{tabularx}
         }\\ \hline
-        
     \end{tabularx} 
     \label{table:analysis by profession part2}
 \end{table}

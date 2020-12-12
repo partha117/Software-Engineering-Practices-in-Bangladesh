@@ -1,11 +1,12 @@
-\newcolumntype{b}{X}
+% \newcolumntype{b}{X}
 \newcolumntype{v}{>{\hsize=.03\hsize}X}
+\newcolumntype{k}{>{\hsize=.97\hsize}X}
 \newcolumntype{m}{>{\hsize=.2\hsize}X}
-\newcolumntype{y}{>{\hsize=.33\hsize}X}
-\begin{table}[htbp]
+\newcolumntype{y}{>{\hsize=.4\hsize}X}
+\begin{table}[!ht]
     \centering
     \caption{Highlights of Findings from Survey Closed Questions by Profession}
-    \begin{tabularx}{\textwidth}{v|b}
+    \begin{tabularx}{\textwidth}{v|k}
         \hline
         \textbf{No}     & \textbf{Question}  \\ \hline
         4         & For how many years have you coded professionally?\newline 1) Architect: \textbf{\textit{more than 10, 100.0\% } } 2) Business analyst: \textbf{\textit{more than 10, 100.0\% } } 3) Data Engineer: \textbf{\textit{more than 10, 100.0\% } } 4) Developer: \textbf{\textit{less than 2, 41.41\% } } 5) Manager: \textbf{\textit{more than 10, 58.33\% } } 6) R\&D: \textbf{\textit{less than 2, 100.0\% } } 7) SQA: \textbf{\textit{2 to 5, 50.0\% } } 8) Team Lead: \textbf{\textit{5 to 10, 100.0\% } } 9) Trainer: \textbf{\textit{2 to 5, 100.0\% } } 10) UXD: \textbf{\textit{5 to 10, 100.0\% } }    \\ \hline
@@ -13,10 +14,10 @@
         
         6         & Which of the following software development methodologies do you follow?\newline 
         {
-        \begin{tabularx}{0.92\textwidth}{yyy}
+        \begin{tabularx}{0.92\textwidth}{mmy}
          & top1 (\%) & top2 (\%) \\
         Architect & Agile (100.0)  &  \\
-        Business analyst & Agile (33.33)  & Scrum (33.33)  \\
+        Business \\analyst & Agile (33.33)  & Scrum (33.33)  \\
         Data Engineer & Scrum (100.0)  &  \\
         Developer & Agile (42.0)  & Scrum (32.67)  \\
         Manager & Agile (37.29)  & Scrum (28.81)  \\
@@ -28,41 +29,7 @@
         \end{tabularx}
         }
         \\ \hline
-        7 & Which of the followings do you use for requirements gathering?\newline
-        GUI prototype = GP, Grooming seasons = GS, Plain Text = PT, Story board = SB, Use Case = UC
-        {
-        \begin{tabularx}{0.92\textwidth}{yyy}
-         \\
-         & top1 (\%) & top2 (\%) \\
-        Business analyst & GP (22.22)  & GS (22.22)  \\
-        Data Engineer & PT (33.33)  & SB (33.33)  \\
-        Developer & PT (26.2)  & SB (22.99)  \\
-        Manager & GS (20.48)  & SB (20.48)  \\
-        R\&D & GS (33.33)  & SB (33.33)  \\
-        SQA & UC (27.78)  & GS (22.22)  \\
-        Team Lead & GP (33.33)  & SB (33.33)  \\
-        Trainer & GP (25.0)  & PT (25.0)  \\
-        UXD & GP (50.0)  & UC (50.0)  \\
-        \end{tabularx}
-        }
-        \\ \hline
-        8 & On which software development activities, do you spend most of the time?\newline Program Design = PD, Requirement Analysis = RA
-        {
-        \begin{tabularx}{0.92\textwidth}{yyy}
-        \\
-         & top1 (\%) & top2 (\%) \\
-        Architect & Implementation (25.0)  & PD (25.0)  \\
-        Business analyst & Implementation (33.33)  & RA (33.33)  \\
-        Data Engineer & Implementation (33.33)  & Maintenance (33.33)  \\
-        Developer & Implementation (30.33)  & RA (18.85)  \\
-        Manager & RA (22.37)  & Implementation (21.05)  \\
-        R\&D & Implementation (50.0)  & PD (50.0)  \\
-        SQA & Testing (25.0)  & RA (17.86)  \\
-        Team Lead & Documentation (25.0)  & Implementation (25.0)  \\
-        Trainer & Implementation (25.0)  & PD (25.0)  \\
-        UXD & Implementation (33.33)  & Maintenance (33.33)  \\
-        \end{tabularx}
-        }\\ \hline
+        
     \end{tabularx}
     \label{table:analysis by profession part1}
 \end{table}

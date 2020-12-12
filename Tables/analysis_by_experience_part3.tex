@@ -1,0 +1,53 @@
+% \newcolumntype{b}{X}
+\newcolumntype{v}{>{\hsize=.04\hsize}X}
+\newcolumntype{k}{>{\hsize=.96\hsize}X}
+\newcolumntype{m}{>{\hsize=.2\hsize}X}
+\newcolumntype{y}{>{\hsize=.33\hsize}X}
+\begin{table}[!ht]
+    \centering
+    \caption{Highlights of Findings from Survey Closed Questions by Experience}
+    \begin{tabularx}{\textwidth}{v|k}
+        \hline
+        \textbf{No}     & \textbf{Question}  \\ \hline
+        
+        14 & What types of software testing practices do you use? \newline Functional testing = FT, Performance testing = PT, Unit testing = UT, User acceptance testing = UAT
+        {
+        \begin{tabularx}{0.92\textwidth}{yyy}
+            & top1 (\%) & top2 (\%) \\
+        less than 2 & UT (32.1)  & FT (24.69)  \\
+        2 to 5 & FT (24.64)  & UT (18.84)  \\
+        5 to 10 & FT (23.44)  & UAT (20.31)  \\
+        more than 10 & UT (25.29)  & UAT (19.54)  \\
+        \end{tabularx}
+        }\\ \hline
+        
+        15 & What is the level of automated testing in your projects?\newline 
+        1) less than 2: \textbf{\textit{5, 34.88\% } }
+        2) 2 to 5: \textbf{\textit{5, 35.71\% } } 3) 5 to 10: \textbf{\textit{5, 30.77\% } } 4) more than 10: \textbf{\textit{2, 27.27\% } }
+        \\ \hline
+        
+        16 & Which tools do you use for testing and quality assurance?
+        {
+        \begin{tabularx}{0.92\textwidth}{yyy}
+            & top1 (\%) & top2 (\%) \\
+        less than 2 & XUnit (33.33)  & Selenium (26.67)  \\
+        2 to 5 & Selenium (45.45)  & XUnit (27.27)  \\
+        5 to 10 & Selenium (35.48)  & XUnit (32.26)  \\
+        more than 10 & XUnit (38.46)  & JenKins (25.64)  \\
+        \end{tabularx}
+        } \\ \hline
+        
+        17 & Which tools do you use for continous deployment? \newline
+        AWS codeDeploy = AC, Open Source server = OSS
+        {
+        \begin{tabularx}{0.92\textwidth}{yyy}
+            & top1 (\%) & top2 (\%) \\
+        less than 2 & AC (23.53)  & Others (17.65)  \\
+        2 to 5 & AC (26.67)  & Bamboo (20.0)  \\
+        5 to 10 & AC (27.27)  & Others (27.27)  \\
+        more than 10 & Jenkins (37.5)  & AC (16.67)  \\
+        \end{tabularx}
+        } \\ \hline
+    \end{tabularx}
+    \label{table:analysis_by_experience_part3}
+\end{table}

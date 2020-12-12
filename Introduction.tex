@@ -1,6 +1,9 @@
 \section{Introduction}
 \label{introduction}
-
+\newcolumntype{v}{>{\hsize=.08\hsize}X}
+\newcolumntype{b}{>{\hsize=.77\hsize}X}
+\newcolumntype{m}{>{\hsize=.15\hsize}X}
+ \newcolumntype{y}{>{\hsize=.33\hsize}X}
 %The software engineering (SE) industry in Bangladesh is considered relatively small compared to the size of its population (160 million-plus) and the size of the national economy. %Yet, the software industry in this country has started rapidly emerging and become part of Bangladesh's rapid development in recent years. 
 %The majority of software companies were established after 2000 and have become a crucial resource for the economy of Bangladesh \citep{Basis2017}, and also the growth rate is expected to continue sharply. This propitious growth is bolstered by export trends and a large demand for IT automation in the domestic market. To continue this achievement by fulfilling the growing expectations of software consumers, the SE industry needs to follow standard practices in producing good quality software products. %Thus for this, we have to first point out how the software development process is exercised in such a rapidly emerging industry. 
 
@@ -65,34 +68,41 @@ we compare our findings against findings from other countries. We answer two res
 \end{inparaenum} We report the practices (RQ1) and the comparisons (RQ2) along four dimensions (D) as follows. The four dimensions 
 were previously used in similar country-based previous studies, which thus helped us to compare our findings against their findings.
 
-\begin{description}
-\item[\bf{D1. Software development methodologies used.}] We investigate the development
+%\begin{description}
+%\item[\bf{D1. Software development methodologies used.}] 
+\nd\bf{D1. Software development methodologies used.} We investigate the development
 approaches, methodologies, and requirements analysis processes. We find that the software
 companies in Bangladesh mostly follow the agile methodology. In comparison with the
 other countries, Bangladeshi software companies generally spend
 more time on the implementation stage of the development. Technologically advanced countries spend more on system design.
-\item[\bf{D2. Software tools and techniques used}.] We determine the
+
+%\item[\bf{D2. Software tools and techniques used}.] 
+\nd\bf{D2. Software tools and techniques used}. We determine the
 trending technologies like technology platforms, programming languages,
 frameworks, etc. We find that web-based software services
 are prevalent in the Bangladeshi software market and JavaScript is mostly used language for web
 development. The degree of technologies and tools usage varies
 from the developed countries due to the availability of experienced developers,
 budget, etc. 
-\item[\bf{D3. Software testing and devops practices used}.] We explore the
+%\item[\bf{D3. Software testing and devops practices used}.] 
+
+\nd\bf{D3. Software testing and devops practices used}. We explore the
 present situation of testing and deployment practices adopted by the software
 firms in Bangladesh by asking questions about testing and deployment tools, test
 automation level, version control system, etc. We find
 that the usage of test automation and deployment tools is not widespread in the
 Bangladeshi industry. We also see that compared
 to developed countries, the test automation tool adoption is inadequate. 
-\item[\bf{D4. Security and performance measures used}.] We analyze how
+%\item[\bf{D4. Security and performance measures used}.] 
+
+\nd\bf{D4. Security and performance measures used}. We analyze how
 software companies secure and maintain their code and what practices are
 followed to ensure performance and scalability. The responses show that
 standards are followed for security assurance, tools are used for performance
 testing, and scalability is mostly ensured by using cloud services. However, the companies in Bangladesh lags
 behind in the area of automated performance testing and containerization that
 might ensure resource-optimized scalability.
-\end{description}
+%\end{description}
 
 % \begin{itemize}[leftmargin=10pt]
 % 
@@ -182,8 +192,7 @@ useful for current students to prepare themselves for a career in this emerging 
 % where the individual concerned works.
 
 
-\noindent\textbf{Paper Organization.} The remainder of the paper is organized as
-follows. Section~\ref{related_works} presents the related work to our study.
+\noindent\textbf{Paper Organization.} Section~\ref{related_works} presents the related work to our study.
 Section~\ref{study_setup} describes the background of our study and the data
 collection procedure. Section~\ref{study_results} answers the two research questions. Section~\ref{discussions} reports
 challenges and opportunities as well as analysis by several dimensions of

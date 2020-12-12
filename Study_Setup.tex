@@ -10,34 +10,37 @@
 
 Our study has four steps as follows:
 \begin{itemize}[leftmargin=10pt]
-  \item\bf{Step 1 - Interview.}  We conduct a series of semi-structured interviews to get an overview of the current development practices in Bangladesh and to understand how 
-  such practices could differ from other countries.
-  \item\bf{Step 2 - Survey.} We design a survey questions to get deep insights on the insights collected from the interviews. 
-  \item\bf{Steps 3, 4 - Data Analysis to answer RQ1 and RQ2.} We analyze the survey responses to answer RQ1 (i.e., understand development practices in Bangladesh) and RQ2 (compare the practices in Bangladesh with other countries).
-\end{itemize} We discuss the steps below.
-\subsection{Interview}
+  \item\bf{Step 1 - Interview (Section \ref{sec:interview}).}  We conduct a series of semi-structured interviews to understand the current development practices in Bangladesh and to understand how 
+  such practices could differ from other countries. 
+  \item\bf{Step 2 - Survey (Section \ref{survey_participants}).} We design a survey questions to get deep insights on the insights collected from the interviews.  
+  \item\bf{Steps 3, 4 - Data Analysis to answer RQ1 and RQ2 (Section \ref{survey_data_collection}).} We analyze the
+  survey responses to answer RQ1 (understand development practices in
+  Bangladesh) and RQ2 (compare the practices against other
+  countries).
+  
+\end{itemize} %We discuss the steps below.
+\subsection{Interview}\label{sec:interview}
 The goal of
-the interview session was to prepare the survey questions. In
-total, eight individual participants from four leading software companies were
-selected. First we designed an initial list of survey questions in Google form by consulting previous studies in other countries like 
+the interview session was to prepare the survey questions. Eight individual participants from four leading software companies were
+interviewed. First we designed an initial list of survey questions in Google form by consulting previous studies in other countries like 
 Canada, Turkey, Netherlands, New Zealand, etc.~\citep{Garousi2013, Garousi2015, Vonken2012, Wang2018}. Each
 participant was asked
-identify ambiguities in the question. From the feedback and results of the
+to identify ambiguities in the question. From the feedback of the
 interview session, we revised the questions. Each interview session lasted about half an hour. 
 Interviewees were first asked to complete the survey.
 After completing the survey, we asked what he/she understood from the questions
 and what he/she meant by the answers. Throughout the interviews, we identified
 discrepancies between the understanding of the interviewee and the goals of the
-survey questions by comparing the interview findings against findings from related work (i.e., findings from other countries). 
+survey questions by comparing the interview findings against findings from related work.
 %Finally, we adjusted the survey questions to reduce ambiguity in survey questions.
-
-
-\subsection{Survey}
+\subsection{Survey Participants}
 \label{survey_participants}
 \input{Tables/Survey_Questions_1}
-\input{Tables/Survey_Questions_2}
-In this survey, we have targeted developers who are currently working in the
-software industry of Bangladesh. We applied purposive sampling~\citep{Vogt2005} to
+The survey questions are shown in Table \ref{table:survey_questions_1}. There are 17 questions, 14 closed and three open-ended.
+We targeted developers who are currently working in the
+software industry of Bangladesh. 
+%\input{Tables/Survey_Questions_2}
+We applied purposive sampling~\citep{Vogt2005} to
 include respondents in a software development related role. Purposive sampling
 is basically based on the assumption of the population. It is possible that some
 elements will not have a chance of selection in this method. Moreover, the
@@ -51,15 +54,18 @@ before the invitations were sent, and the survey link was closed for two
 consecutive weeks without any response. The survey link was open for feedback
 for about two months. In total, we
 received 137 responses from the survey. Each participant was first asked a series of demographic questions (e.g., roles, experience, gender) and 
-then was presented the survey questions related to the development practices. The survey questions (except the demographic questions) 
-are presented in \tbl\ref{table:survey_questions_1} and \tbl\ref{table:survey_questions_2} along the four 
-dimensions (methodologies, tools, testing, and security and performance). For each question, we also show the number of responses we received. 
+then was presented the survey questions related to the development practices. 
 \tbl\ref{tab:role} shows the distribution of the survey participants by their roles. More than 69\% of the participants 
 are software developers and 16.9\% are managers. Around 8\% reported as being other kinds of software engineers (e.g., data engineer, R\&D engineer). 
 \tbl\ref{tab:experience} shows the distribution of the survey participants by their experience. More than 61\% of the participants worked in the
 industry for at least 2 years. About 38.5\% of the respondents in our survey came from three software companies, while the rest (61.5\%) were from 38 
-different companies. About half of the companies (51.9\%) are involved in web development, application development, and ERP software development. However, the companies offer a variety of products such as IoT-based health monitoring, cloud services, telecom, ride-sharing platform, biometrics-based personal identity management, and security solutions. \gias{Please fill up by talking about some of the products the companies 
-are developing. Use Linkedin for that)}.\partha{Updated} 
+different companies. About half of the companies (51.9\%) are involved in web development, application development, and ERP software development. 
+However, the companies offer a variety of products such as IoT-based health
+monitoring, cloud services, telecom, ride-sharing platform, biometrics-based
+personal identity management, and security solutions. 
+%\gias{Please fill up by
+%talking about some of the products the companies
+%are developing. Use Linkedin for that)}.\partha{Updated} 
 \input{Tables/participants_role}
 \input{Tables/participants_experience}
 

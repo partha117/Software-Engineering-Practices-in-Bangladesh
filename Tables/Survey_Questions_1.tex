@@ -1,42 +1,62 @@
-
-\newcolumntype{v}{>{\hsize=.08\hsize}X}
-\newcolumntype{b}{>{\hsize=.77\hsize}X}
-\newcolumntype{m}{>{\hsize=.15\hsize}X}
-% \newcolumntype{y}{>{\hsize=.33\hsize}X}
-\begin{table}[htbp]
+\begin{table}%[h]
     \centering
-    \caption{The survey questions (without demographic questions) along the first two dimensions (D). Subscript with a question number shows number of responses.}
-    \begin{tabularx}{\textwidth}{v|m|b}
-        \hline
-        \bf{RQ1 D1} & \bf{Question type} & \bf{Software development methodologies used} \\ 
+    \caption{Survey questions (without demographic) along the four dimensions (D). Subscripts with a question number show \# of responses and question type (O = Open, C = Closed)}
+    \resizebox{\columnwidth}{!}{%
+    \begin{tabular}{l|l}
+        \toprule
+        \bf{D1} & \bf{Software development methodologies used} \\ 
         \midrule
         
-        \multicolumn{1}{v|}{$6_{127}$} & \multicolumn{1}{m|}{Closed} & Which of the following software development methodologies do you follow? \\ 
-        \cmidrule{2-3} 
+        {$6_{127, C}$} & Which of the following software development methodologies do you follow? \\ 
+        %\cmidrule{2-2} 
         
-        \multicolumn{1}{v|}{$7_{120}$} & \multicolumn{1}{m|}{Closed} & Which of the followings do you use for requirements gathering? \\ 
-        \cmidrule{2-3} 
+        {$7_{120, C}$} & Which of the followings do you use for requirements gathering? \\ 
+        %\cmidrule{2-3} 
         
-        \multicolumn{1}{v|}{$8_{126}$} & \multicolumn{1}{m|}{Closed} & On which software development activities, do you spend most of the time?\\ 
-        \cmidrule{2-3} 
-        
-        \multicolumn{1}{v|}{\bf{RQ1 D2}} & \multicolumn{1}{m|}{\bf{Question type}} & \bf{Software tools and techniques used} \\
+        {$8_{126, C}$} & On which software development activities, do you spend most of the time?\\ 
+        %\cmidrule{2-3} 
+        %\midrule
+        {\bf{D2}}  & \bf{Software tools and techniques used} \\
         \midrule
         
-        \multicolumn{1}{v|}{$9_{128}$} & \multicolumn{1}{m|}{Closed} & Which of the following technologies do you have experience working in?\\ 
-        \cmidrule{2-3}
+        {$9_{128, C}$} & Which of the following technologies do you have experience working in?\\ 
+        %\cmidrule{2-3}
         
-        \multicolumn{1}{v|}{$10_{127}$} & \multicolumn{1}{m|}{Closed} & What is the primary operating system you are developing on?  \\
-        \cmidrule{2-3} 
+        {$10_{127, C}$} & What is the primary operating system you are developing on?  \\
+        %\cmidrule{2-3} 
         
-        \multicolumn{1}{v|}{$11_{128}$} & \multicolumn{1}{m|}{Closed} & Which programming languages are you using?\\ 
-        \cmidrule{2-3} 
+        {$11_{128, C}$} & Which programming languages are you using?\\ 
+        %\cmidrule{2-3} 
         
-        \multicolumn{1}{v|}{$12_{109}$} & \multicolumn{1}{m|}{Closed} & Which frameworks are you using?\\
-        \cmidrule{2-3} 
+        {$12_{109, C}$} & Which frameworks are you using?\\
+        %\cmidrule{2-3} 
         
-        \multicolumn{1}{v|}{$13_{125}$} & \multicolumn{1}{m|}{Closed} & Which IDE are you using?\\  \hline
+        {$13_{125, C}$} & Which IDE are you using?\\  
+        %\midrule
+        \bf{D3} & \bf{Software  testing  and  devops  practices used} \\ 
+        \midrule
         
-    \end{tabularx}
+        {$14_{117, C}$} & What types of software testing practices do you use?  \\
+        %\cmidrule{2-3} 
+        
+        {$15_{118, C}$} & What is the level of automated testing in your projects?  \\
+        %\cmidrule{2-3} 
+        
+        {$16_{83, C}$} & Which tools do you use for testing and quality assurance? \\
+        %\cmidrule{2-3} 
+        
+        {$17_{60, C}$} & Which tools do you use for continuous deployment?\\ 
+        %\cmidrule{2-3} 
+        
+        {$18_{121, C}$} & Which version control tool do you use? \\
+        %\cmidrule{2-3} 
+        {\bf{D4}} & \bf{Security  and  performance  measures used} \\ 
+        \midrule
+        {$21_{74, O}$} & How do you ensure scalability of your products?                               \\ %\cmidrule{2-3}
+        {$22_{73, O}$} & How do you maintain performance of your products?                               \\ %\cmidrule{2-3}
+        {$23_{74, O}$} & How do you ensure security of your products?\\
+        \bottomrule
+    \end{tabular}%
+    }
     \label{table:survey_questions_1}
 \end{table}

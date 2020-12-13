@@ -1,8 +1,8 @@
-\subsubsection{Security and performance measures used (D4)}
+\subsubsection{Performance and security measures used (D4)}
 \label{security_performance}
 Security and performance are two of the most important non-functional requirements for any software product. 
 We asked three open-ended questions with regards to the enforcement of security and performance-related features in software products in Bangladesh:
-How do you ensure security (Q23), performance (Q21), and scalability (Q22) in your software products?
+How do you ensure performance, scalability (Q21, Q22) and security (Q23) in your software products?
 
 % To identify general practices among the Bangladeshi software companies regarding software products' security and performance, we have included two open-ended questions in the survey. This particular question covers how a company secures its developed products from security threats and maintain performance after deployment. However, the scalability of software directly impacts its performance\citep{Liu2009,Bondi2000}. Hence, we will cover the following points here:
 % \begin{itemize}
@@ -13,6 +13,58 @@ How do you ensure security (Q23), performance (Q21), and scalability (Q22) in yo
 
 
 %\label{Security}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.22]{Figures/Performance.eps} 
+\caption{Measures to ensure performance of products}
+\label{fig:Measures to ensure performance}
+\end{figure}
+\nd\bf{$\bullet$ Performance (Q21, Q22).} Software performance indicates how efficient the software is in terms of response time and resource consumption. 
+We find nine types of performance measures that are practised in software products developed in Bangladesh (see Figure \ref{fig:Measures to ensure performance}).  
+The nine types are divided into four categories: 
+\begin{inparaenum}
+Use of \item tools and frameworks (58.2\%),
+\item design principles/best practices (32.7\%),
+\item testing (21.8\%), and
+\item review and feedback (21.8\%).
+\end{inparaenum} 
+
+\begin{inparaenum}[(1)]
+\item \ib{Exploitation of tools and frameworks.} Four out of nine types belong to this category.
+\begin{inparaenum}%[label=(\alph*)]
+    \item \it{Tools}: Around 36.4\% respondents use tools and metrics to
+    measure performance:  \emt{take help of different performance monitoring tools and dashboard, analyzed data, measure time and memory efficiency of process}($S_{35}$)
+    \item \it{Infrastructure}: Around 12.7\% of respondents use upgraded
+    infrastructure to ensure performance like cloud
+    hosting (e.g., Amazon AWS), a high-end server, and new technologies.
+    %\emt{Amazon Hosting and Quality Software}{85}
+    \item \it{Caching}: Around 5.5\% respondents implemented caching to maintain
+    software performance.
+    % \emt{... Good Caching}{29}
+    \item \it{Load Balancing}: Around 3.6\% respondents use load
+    balancing as a measure to maintain performance:
+    \emt{Optimizing number of HTTP requests, Asynchronous programming, Caching, CDN, Load Balancing, nginx, varnish, compression of data, 
+    Continuous monitoring, Load testing, stress testing}($S_{42}$)
+\end{inparaenum}
+ 
+\item \ib{Use of design principles/best practices.}  Around 32.7\% respondents try to ensure software performance right from the design phase as follows.
+\begin{inparaenum}%[label=(\alph*)]
+    \item \it{Using better codes/practices}: Around 18.2\% respondents ensure performance by
+    implementing industry-standard best practices like compression
+    technology, enforcing design patterns, and refactoring.
+    %\emt{Implementation time carefulness and maintaining a well developed coding standard}{40}
+    \item \it{Efficient designing}: Around 14.6\% of respondents emphasize on
+    performance-aware architecture design.
+    %\emt{By careful designing}{24}
+\end{inparaenum}
+
+\item \ib{Use of testing.} Around 21.8\% respondents rely on the software testing strategy to ensure performance like load testing and stress testing.
+
+\item \ib{Use of review and feedback.} Around 18.2\% of our respondents use user feedback (e.g., continuous feedback from QA team $S_{65}$) 
+and code review to improve product performance. According to $S_{15}$: \emt{The code quality is assessed by the different team members during code review, followed by designing new ways to solve issues in the product that are time-intensive.}
+\end{inparaenum}
+
 
 \begin{figure}[h]
 \centering
@@ -128,56 +180,6 @@ transmission.
 % To maintain security of software product SE industry of Bangladesh is mainly dependent on standard process which includes cloud based security, third party software, OS hardening followed by uses of security tools, network level measures and framework security. As found by Harrison et al.\citep{Harrison2010} network level measures are the first choice in ensuring security of software product which matches with our findings. Srinivasan et al.\citep{Srinivasan2017} listed top 10 web framework in terms of security testing where Spring framework achieved 7\textsuperscript{th} position. From figure ~\ref{fig:frameworks} we have seen that most of our respondents use Spring framework for software development. This might be the reason that a lot number of respondents dependent on framework for ensuring security.
 
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.22]{Figures/Performance.eps} 
-\caption{Measures to ensure performance of products}
-\label{fig:Measures to ensure performance}
-\end{figure}
-\nd\bf{$\bullet$ Performance (Q21, Q22).} Software performance indicates how efficient the software is in terms of response time and resource consumption. 
-We find nine types of performance measures that are practised in software products developed in Bangladesh (see Figure \ref{fig:Measures to ensure performance}).  
-The nine types are divided into four categories: 
-\begin{inparaenum}
-Use of \item tools and frameworks (58.2\%),
-\item design principles/best practices (32.7\%),
-\item testing (21.8\%), and
-\item review and feedback (21.8\%).
-\end{inparaenum} 
-
-\begin{inparaenum}[(1)]
-\item \ib{Exploitation of tools and frameworks.} Four out of nine types belong to this category.
-\begin{inparaenum}%[label=(\alph*)]
-    \item \it{Tools}: Around 36.4\% respondents use tools and metrics to
-    measure performance:  \emt{take help of different performance monitoring tools and dashboard, analyzed data, measure time and memory efficiency of process}($S_{35}$)
-    \item \it{Infrastructure}: Around 12.7\% of respondents use upgraded
-    infrastructure to ensure performance like cloud
-    hosting (e.g., Amazon AWS), a high-end server, and new technologies.
-    %\emt{Amazon Hosting and Quality Software}{85}
-    \item \it{Caching}: Around 5.5\% respondents implemented caching to maintain
-    software performance.
-    % \emt{... Good Caching}{29}
-    \item \it{Load Balancing}: Around 3.6\% respondents use load
-    balancing as a measure to maintain performance:
-    \emt{Optimizing number of HTTP requests, Asynchronous programming, Caching, CDN, Load Balancing, nginx, varnish, compression of data, 
-    Continuous monitoring, Load testing, stress testing}($S_{42}$)
-\end{inparaenum}
- 
-\item \ib{Use of design principles/best practices.}  Around 32.7\% respondents try to ensure software performance right from the design phase as follows.
-\begin{inparaenum}%[label=(\alph*)]
-    \item \it{Using better codes/practices}: Around 18.2\% respondents ensure performance by
-    implementing industry-standard best practices like compression
-    technology, enforcing design patterns, and refactoring.
-    %\emt{Implementation time carefulness and maintaining a well developed coding standard}{40}
-    \item \it{Efficient designing}: Around 14.6\% of respondents emphasize on
-    performance-aware architecture design.
-    %\emt{By careful designing}{24}
-\end{inparaenum}
-
-\item \ib{Use of testing.} Around 21.8\% respondents rely on the software testing strategy to ensure performance like load testing and stress testing.
-
-\item \ib{Use of review and feedback.} Around 18.2\% of our respondents use user feedback (e.g., continuous feedback from QA team $S_{65}$) 
-and code review to improve product performance. According to $S_{15}$: \emt{The code quality is assessed by the different team members during code review, followed by designing new ways to solve issues in the product that are time-intensive.}
-\end{inparaenum}
 % 
 % Software performance indicates how efficient the software is in terms of response time and resource consumption. Our open coding of the survey responses reveals four main categories of performance-related development practices: 
 % The measures are presented in Figure \ref{fig:Measures to ensure performance}.
@@ -231,61 +233,61 @@ and code review to improve product performance. According to $S_{15}$: \emt{The 
 %\boxtext{For performance, the SE industry in Bangladesh is largely dependent on monitoring tools and software testing.}
 
 
-\paragraph{Scalability}
-\label{Scalability}
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.22]{Figures/Scalability.eps} 
-\caption{Measures to ensure scalability of products}
-\label{fig:Measures to ensure scalability}
-\end{figure}
-
- Software scalability defines the ability to scale up a solution. Issues with little importance can impede scaling up. Thus proper measures should be taken from the design stage to ensure the scalability of the system. Scalability ensured by efficient software design is the most common strategy in the Bangladesh SE industry. Our open coding of the survey responses reveals four main categories of scalability-related development practices: 
-\begin{inparaenum}
-\item Use of design principles to ensure software scalability (67.3\%).
-\item Exploitation of tools and frameworks to ensure software scalability (34.62\%). 
-\item Use of testing to ensure software scalability(11.54\%), and
-\item Use of database design standards to ensure software scalability (7.69\%).
-\end{inparaenum} 
-The measures practiced in the Bangladesh SE industry are presented in Figure \ref{fig:Measures to ensure scalability}.
-
-
- Scalability ensured by efficient software design is the most common strategy in the Bangladesh SE industry. 67.3\% reported using at least one of the measures in this category. The measures in \emph{efficient software design} category are:
-% Recent days the cloud services offer tools to accomodate custom reactive scaling strategies. Thus, it has become easier to ensure scalability using cloud services \citep{Falatah2014}. Our results  also follows the world trend, usage of cloud services has placed 2\textsuperscript{nd} in terms popularity of scalability measures in SE industry of Bangladesh.
- \begin{enumerate}[label=(\alph*)]
- 
-     \item \textbf{Efficient Design and Implementation}: 32.69\% of respondents emphasize on the design and implementation of a scalable architecture. 
-    \surveyquote{During implementation we always keep in mind about the scaling factor}{40}
-    
-     \item \textbf{Emphasizing on architecture}: 19.23\% of respondents emphasized on architecture. It is mostly micro-service architecture which they use to ensure scalability.
-    \surveyquote{We follow the micro-service architecture. In a nutshell, we scale up the module vertically which is necessary. We use docker along with Jenkins for automatic deployments and scaling.}{10}
-
-    
-    \item \textbf{Following Design Patterns}: Some design patterns inherently help in scaling. 15.38\% of respondents think that implementing these design patterns will be of great use for software scalability.
-    \surveyquote{Following certain design patterns}{8}
- 
- \end{enumerate}
- 
-34.62\% of respondents of our survey use framework or tool to ensure scalability. The measures in this category are as follows:
-\begin{enumerate}[label=(\alph*)]
-
-    \item \textbf{Using Cloud Services}: 28.85\% users depend on cloud services such as AWS and Azure for the scalability of the system. Modern features like elastic load balancing and auto-scaling make it easy to ensure scalability.
-    \surveyquote{Using AWS Elastic Load Balancer}{28}
-    
-    \item \textbf{Container Technology}: Container technologies include Docker, Kubernetes, etc. which ensure OS-level virtualization. By standardizing the system, container technologies ease the scaling of infrastructure. 3.85\% of the respondents use these measures to ensure product scalability. Containers enable users to scale their system without any dependency on the underlying OS.
-    \surveyquote{We used Docker technology}{85}
-    
-    \item \textbf{Using SDK/framework}: Modern frameworks ensure scalability by default. 1.92\% of respondents solely depend on the framework for scalability.
-    \surveyquote{following flexible framework which allows better scalability}{14}
-  
-\end{enumerate}
- 
- 
-There is one measure under the software testing category, which is load testing. Load testing can be used to check the scalability of a system. 11.54\% of respondents use load tests to check whether their system is scalable or not.
-\surveyquote{through load testing and load simulation.}{35}
-
-There is also one measure under the Database Design category, which is database optimization. Database optimization includes sharding, clustering, indexing, and scaling. 7.69\% of respondents optimize the database to scale their system.
-\surveyquote{Besides scaling horizontally, database scaling is performed by partitioning tables, along with multi-threaded implementations}{85}
+% \paragraph{Scalability}
+% \label{Scalability}
+% \begin{figure}[h]
+% \centering
+% \includegraphics[scale=0.22]{Figures/Scalability.eps} 
+% \caption{Measures to ensure scalability of products}
+% \label{fig:Measures to ensure scalability}
+% \end{figure}
+% 
+%  Software scalability defines the ability to scale up a solution. Issues with little importance can impede scaling up. Thus proper measures should be taken from the design stage to ensure the scalability of the system. Scalability ensured by efficient software design is the most common strategy in the Bangladesh SE industry. Our open coding of the survey responses reveals four main categories of scalability-related development practices: 
+% \begin{inparaenum}
+% \item Use of design principles to ensure software scalability (67.3\%).
+% \item Exploitation of tools and frameworks to ensure software scalability (34.62\%). 
+% \item Use of testing to ensure software scalability(11.54\%), and
+% \item Use of database design standards to ensure software scalability (7.69\%).
+% \end{inparaenum} 
+% The measures practiced in the Bangladesh SE industry are presented in Figure \ref{fig:Measures to ensure scalability}.
+% 
+% 
+%  Scalability ensured by efficient software design is the most common strategy in the Bangladesh SE industry. 67.3\% reported using at least one of the measures in this category. The measures in \emph{efficient software design} category are:
+% % Recent days the cloud services offer tools to accomodate custom reactive scaling strategies. Thus, it has become easier to ensure scalability using cloud services \citep{Falatah2014}. Our results  also follows the world trend, usage of cloud services has placed 2\textsuperscript{nd} in terms popularity of scalability measures in SE industry of Bangladesh.
+%  \begin{enumerate}[label=(\alph*)]
+%  
+%      \item \textbf{Efficient Design and Implementation}: 32.69\% of respondents emphasize on the design and implementation of a scalable architecture. 
+%     \surveyquote{During implementation we always keep in mind about the scaling factor}{40}
+%     
+%      \item \textbf{Emphasizing on architecture}: 19.23\% of respondents emphasized on architecture. It is mostly micro-service architecture which they use to ensure scalability.
+%     \surveyquote{We follow the micro-service architecture. In a nutshell, we scale up the module vertically which is necessary. We use docker along with Jenkins for automatic deployments and scaling.}{10}
+% 
+%     
+%     \item \textbf{Following Design Patterns}: Some design patterns inherently help in scaling. 15.38\% of respondents think that implementing these design patterns will be of great use for software scalability.
+%     \surveyquote{Following certain design patterns}{8}
+%  
+%  \end{enumerate}
+%  
+% 34.62\% of respondents of our survey use framework or tool to ensure scalability. The measures in this category are as follows:
+% \begin{enumerate}[label=(\alph*)]
+% 
+%     \item \textbf{Using Cloud Services}: 28.85\% users depend on cloud services such as AWS and Azure for the scalability of the system. Modern features like elastic load balancing and auto-scaling make it easy to ensure scalability.
+%     \surveyquote{Using AWS Elastic Load Balancer}{28}
+%     
+%     \item \textbf{Container Technology}: Container technologies include Docker, Kubernetes, etc. which ensure OS-level virtualization. By standardizing the system, container technologies ease the scaling of infrastructure. 3.85\% of the respondents use these measures to ensure product scalability. Containers enable users to scale their system without any dependency on the underlying OS.
+%     \surveyquote{We used Docker technology}{85}
+%     
+%     \item \textbf{Using SDK/framework}: Modern frameworks ensure scalability by default. 1.92\% of respondents solely depend on the framework for scalability.
+%     \surveyquote{following flexible framework which allows better scalability}{14}
+%   
+% \end{enumerate}
+%  
+%  
+% There is one measure under the software testing category, which is load testing. Load testing can be used to check the scalability of a system. 11.54\% of respondents use load tests to check whether their system is scalable or not.
+% \surveyquote{through load testing and load simulation.}{35}
+% 
+% There is also one measure under the Database Design category, which is database optimization. Database optimization includes sharding, clustering, indexing, and scaling. 7.69\% of respondents optimize the database to scale their system.
+% \surveyquote{Besides scaling horizontally, database scaling is performed by partitioning tables, along with multi-threaded implementations}{85}
 %\boxtext{Typically software scalability is considered at the design phase in the SE industry of Bangladesh.}
 %\boxtext{The use of cloud services is one of the common measures to ensure scalability.}
 \begin{tcolorbox}[flushleft upper,boxrule=1pt,arc=0pt,left=0pt,right=0pt,top=0pt,bottom=0pt,colback=white,after=\ignorespacesafterend\par\noindent]

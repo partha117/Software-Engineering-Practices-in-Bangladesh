@@ -16,53 +16,59 @@ How do you ensure performance, scalability (Q21, Q22) and security (Q23) in your
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.22]{Figures/Performance.eps} 
-\caption{Measures to ensure performance of products}
-\label{fig:Measures to ensure performance}
+\includegraphics[scale=0.22]{Figures/PerformanceScalability.eps} 
+\caption{Measures to ensure performance \& scalability of products}
+\label{fig:Measures to ensure performance and scalability}
 \end{figure}
 \nd\bf{$\bullet$ Performance (Q21, Q22).} Software performance indicates how efficient the software is in terms of response time and resource consumption. 
-We find nine types of performance measures that are practised in software products developed in Bangladesh (see Figure \ref{fig:Measures to ensure performance}).  
-The nine types are divided into four categories: 
+We find nine types of performance measures that are practised in software products developed in Bangladesh (see Figure \ref{fig:Measures to ensure performance and scalability}).  
+The twelve types are divided into four categories: 
 \begin{inparaenum}
-Use of \item tools and frameworks (58.2\%),
-\item design principles/best practices (32.7\%),
-\item testing (21.8\%), and
-\item review and feedback (21.8\%).
+Use of \item tools and frameworks (46.72\%),
+\item design principles/best practices (26.17\%),
+\item testing (16.82\%), and
+\item review and feedback (9.35\%).
+\item database optimization (3.74\%)
 \end{inparaenum} 
 
 \begin{inparaenum}[(1)]
-\item \ib{Exploitation of tools and frameworks.} Four out of nine types belong to this category.
+\item \ib{Exploitation of tools and frameworks.} Six out of twelve types belong to this category.
 \begin{inparaenum}%[label=(\alph*)]
-    \item \it{Tools}: Around 36.4\% respondents use tools and metrics to
+    \item \it{Tools}: Around 18.69\% respondents use tools and metrics to
     measure performance:  \emt{take help of different performance monitoring tools and dashboard, analyzed data, measure time and memory efficiency of process}($S_{35}$)
-    \item \it{Infrastructure}: Around 12.7\% of respondents use upgraded
+    \item \it{Infrastructure}: Around 20.56\% of respondents use upgraded
     infrastructure to ensure performance like cloud
     hosting (e.g., Amazon AWS), a high-end server, and new technologies.
     %\emt{Amazon Hosting and Quality Software}{85}
-    \item \it{Caching}: Around 5.5\% respondents implemented caching to maintain
+    \item \it{Caching}: Around 2.8\% respondents implemented caching to maintain
     software performance.
     % \emt{... Good Caching}{29}
-    \item \it{Load Balancing}: Around 3.6\% respondents use load
+    \item \it{Container Technology}: Containers enable users to scale their system without any dependency on the underlying OS. About 1.87\% of our respondents use container technologies to ensure their products scalability and performance.
+    \item \it{Using SDK/framework}: About 0.93\% of respondents depend on the framework to maintain software performance and scalability.
+    \item \it{Load Balancing}: Around 1.87\% respondents use load
     balancing as a measure to maintain performance:
     \emt{Optimizing number of HTTP requests, Asynchronous programming, Caching, CDN, Load Balancing, nginx, varnish, compression of data, 
     Continuous monitoring, Load testing, stress testing}($S_{42}$)
 \end{inparaenum}
  
-\item \ib{Use of design principles/best practices.}  Around 32.7\% respondents try to ensure software performance right from the design phase as follows.
+\item \ib{Use of design principles/best practices.}  Around 26.17\% respondents try to ensure software performance right from the design phase as follows.
 \begin{inparaenum}%[label=(\alph*)]
-    \item \it{Using better codes/practices}: Around 18.2\% respondents ensure performance by
+    \item \it{Using better codes/practices}: Around 9.35\% respondents ensure performance by
     implementing industry-standard best practices like compression
     technology, enforcing design patterns, and refactoring.
     %\emt{Implementation time carefulness and maintaining a well developed coding standard}{40}
-    \item \it{Efficient designing}: Around 14.6\% of respondents emphasize on
+    \item \it{Efficient designing}: Around 16.82\% of respondents emphasize on
     performance-aware architecture design.
     %\emt{By careful designing}{24}
 \end{inparaenum}
 
-\item \ib{Use of testing.} Around 21.8\% respondents rely on the software testing strategy to ensure performance like load testing and stress testing.
+\item \ib{Use of testing.} Around 16.82\% respondents rely on the software testing strategy to ensure performance like load testing and stress testing.
 
-\item \ib{Use of review and feedback.} Around 18.2\% of our respondents use user feedback (e.g., continuous feedback from QA team $S_{65}$) 
+\item \ib{Use of review and feedback.} Around 9.35\% of our respondents use user feedback (e.g., continuous feedback from QA team $S_{65}$) 
 and code review to improve product performance. According to $S_{15}$: \emt{The code quality is assessed by the different team members during code review, followed by designing new ways to solve issues in the product that are time-intensive.}
+
+\item \ib{Database Optimization.} Around 3.74\% of our respondents use database optimization to ensure performance and scalability. Database optimization includes sharding, clustering, indexing, and scaling. According to $S_{85}$: \emt{Besides scaling horizontally, database scaling is performed by partitioning tables, along with multi-threaded implementations}
+
 \end{inparaenum}
 
 

@@ -1,68 +1,92 @@
 \section{Implications of Findings}\label{implications}
 The findings from our study can guide the following major stakeholders in software engineering (SE): 
 \begin{inparaenum}[(1)]
+\item SE Tool Creators to develop usable and affordable automated testing framework that can be accessible to emerging countries,     
 \item SE Researchers to compare and contrast software development practices in emerging countries with respect to region-specific and global trends,   
-\item SE Tool Creators to develop usable automated testing framework that can be affordable and accessible to the practitioners in emerging countries,     
 \item SE career enthusiasts who would like to participate in the high-growth software industries in the emerging countries,    
 \item SE security and performance practitioners to develop techniques to better enforce such crucial non-functional requirements in software products in emerging countries, and  
 \item SE Industry leaders to offer customized region-specific software products and to promote diversity irrespective of regions.   
 \end{inparaenum} We discuss the implications below.
 % what are the implications of findings? say for another emerging country or software professionals or companies like Microsoft, Google?
 
-\bf{\ul{SE Researchers.}}  We
-have also found that testing has been given less priority in the industry though
-it is one of the key elements for ensuring software quality. Furthermore,
-automatic testing, which is crucial for the efficiency and productivity of the
-test team, is rarely used. An automatic testing framework for other types of
-testing (such as GUI testing) may increase automatic testing practice. The price
-of quality automated testing tools may cause a lack of their use as the software
-budget in developing countries is often limited. Researchers may create a
-user-friendly framework to implement automatic testing for different types of
-testing to address this affordability issue. This finding may encourage
-researchers to develop open-source tools for the industry of developing
-countries. Containerization technologies are a popular trend worldwide. However, the
-practice of containerization technologies is too low. Automatic
-deployment/release is another under-practiced area. Researchers can investigate
-the challenges to incorporate these technologies in an emerging SE industry like
-Bangladesh.
+ 
 
-\bf{\ul{SE Testing Tool Creators.}} We have found that rigorous testing practice
+\bf{\ul{Tool Creators.}} We have found that rigorous testing practice
 is not prevalent in Bangladesh. The difference in testing effort between the
 established software industry (e.g., Canada) and Bangladesh is too high. The
 scenario is also true for other developing countries like Pakistan. From our
 study, software practitioners may have an idea of their standing in software QA
 in testing. Similar to all emerging industries, security testing is less
 prioritized in Bangladesh. From our comparison, developers may better understand
-security testing and security practices in other countries. Moreover, we have
-shown the level of automatic testing in the Bangladesh SE industry. Automatic
-testing is directly related to productivity. Practitioners can increase their
-productivity by implementing automatic testing for their products. Similarly, we
-have observed the under-use of automatic deployment/CI-CD tools. Practitioners
-should focus more on this area to automate their product pipelines.
- 
+security testing and security practices in other countries. While these findings show a 
+difference in the adoption of testing tools and non-functional measures 
+between emerging and developed countries, the reasons could be multi-faceted. 
+For example, one reason of the prevalence of less automated testing in emerging countries 
+like Bangladesh is that most of the developed software products are web-based. This means 
+that developers in Bangladesh need to test their GUI-based software product. 
+Proper software testing tool support for GUI testing is in infancy compared to 
+the testing of source code. Good GUI-based testing tools are also not 
+free or open-source. This makes it hard for developers in emerging countries to 
+learn and use GUI-based testing framework. Therefore, 
+while unit testing is practiced widely in Bangladesh as like any other countries, 
+the lack of automated testing is really due to the nature of the software products 
+they developers are entitled to work on and the availability of good, usable and affordable 
+testing framework to support them. Therefore, SE tool creators may create a
+user-friendly framework to implement automatic testing for different types of
+testing to address this affordability issue. Alternatively, 
+cheaper and/or more affordable versions of the industry standard automated testing framework 
+can be offered to developers of emerging countries. Containerization technologies are a popular trend worldwide. However, the
+practice of containerization technologies is too low. Automatic
+deployment/release is another under-practiced area. Tool creators can investigate
+the challenges to incorporate these technologies in an emerging SE industry like
+Bangladesh and offer more affordable alternatives. This is important because a software 
+product developed in an emerging country like Bangladesh is actually consumed mostly in the developed 
+countries (e.g., via outsourcing). Therefore, anyone can suffer from any lingering faults in the developed software products.
 
-\bf{\ul{SE industry leaders.}} This study found that the Bangladesh software
-industry lags in adopting some of the current industry trends. Bangladesh can be
-a good marketplace for cloud companies like Microsoft, Google, and Amazon if
-they provide an affordable package for the software companies operating here.
-Local entrepreneurs may also think of building cost-effective local public
-clouds along with providing some common DevOps services.
+% Moreover, we have
+% shown the level of automatic testing in the Bangladesh SE industry. Automatic
+% testing is directly related to productivity. Practitioners can increase their
+% productivity by implementing automatic testing for their products. Similarly, we
+% have observed the under-use of automatic deployment/CI-CD tools. Practitioners
+% should focus more on this area to automate their product pipelines.
+% 
+% We have also found that testing has been given less priority in the industry though
+% it is one of the key elements for ensuring software quality. Furthermore,
+% automatic testing, which is crucial for the efficiency and productivity of the
+% test team, is rarely used. An automatic testing framework for other types of
+% testing (such as GUI testing) may increase automatic testing practice. The price
+% of quality automated testing tools may cause a lack of their use as the software
+% budget in developing countries is often limited. Researchers 
 
-Moreover, we have found most of the participants in our study are engaged in web
-technology. This may indicate that the web is the most popular form among users
-of Bangladesh. This observation can help the industry owners to select
-appropriate medium while targeting users of this region. %We have identified
-common practices of the practitioners of the Bangladesh software industry.
+\bf{\ul{Researchers.}} In SE research, we need to be aware of the current trends in software development practices not only 
+to guide our research along the trends but also to ensure that our research contributions are timely and effective to the current 
+needs of the software industry. In research, we strive to achieve generalizability of our findings, because otherwise we 
+run the risk of becoming too niche or specific that may not cater to a global audience. Our study results of 
+software development practices in an emerging country like Bangladesh and the comparison of 
+such practices against multiple countries worldwide show that development practices, tools, techniques all could 
+vary across the countries. Therefore, it may not be always possible to observe or enforce 
+similar development practices across the globe, even when certain practices may be perceived as superior to others. 
+A major reason of the observed differences between the emerging 
+countries and developed countries is that outsourcing is a still a major source of revenue 
+for the software industries in emerging countries. This explains why product design and overall architecture design 
+is not widely practised in the software industries of emerging countries. A major 
+focus in software engineering research is to understand team cohesion and collaboration. Given 
+the outsourcing nature of the works carried by the software companies in the emerging countries, 
+we can expect that the developers in the companies need to adapt to constantly dynamic teams where some 
+team members are local and some others are remote and temporary, e.g., members from a software company 
+of a developed country that are engaged in the outsourcing work. It is important to understand 
+the productivity of the developers in such dynamic environment, the 
+challenges they face (e.g., lack of enough in-person communication due to remote work and time difference).
+Such research can offer findings in the development new methodologies, tools and techniques to facilitate 
+better communication and collaboration practices among the developers in the such teams. This can 
+then also help the software companies in emerging countries to offer better support to the overall system 
+design and planning. 
 
-In this study, we have identified that the
-participation of female in the Bangladesh SE industry is comparatively less than
-that of male engineers (see Section \ref{analysis by gender}). Hussain et al.\citep{Hussain2020} expressed a
-concern that there may be bias in the hiring process of the industry. Further
-research may be conducted to identify the inherent reason behind these facts.
-
-\bf{\ul{SE Career Enthusiasts.}} We have found that certain languages (e.g.,
+\bf{\ul{Career Enthusiasts.}} We have found that certain languages (e.g.,
 Java, JavaScript, etc.) and frameworks (e.g., Spring, Django, ASP.NET) have
-extensive use in the software industry of Bangladesh. Universities can update
+extensive use in the software industry of Bangladesh. This finding is not different from 
+other emerging countries. Therefore, career enthusiasts who aspire for a software development profession in 
+emerging countries may focus on mastering such skills. Universities can update
 their curricula to meet industry demand. The students aspiring to join the
 software industry must prepare themselves accordingly to be productive quickly.
 We have also found less automated testing practices in the industry of
@@ -74,14 +98,14 @@ right from the student level. The students in their academic projects should
 also use container and other DevOps tools to bring some qualitative improvement
 for the industry when they join there.
 
-\bf{\ul{SE security and performance practitioners.}} 9.56\% of our respondents
+\bf{\ul{Security and Performance Practitioners.}} More than 9.5\% of our respondents
 responded that they do not take any measures to mitigate the security risk. The
 common reason for not taking any measures is (1) the product is an early stage
 (2) the respondents' role does not require any product security measures. The
 reason for not taking any security measures is different from North
-America\citep{Assal2019}. The reasons are (1) there are no formal test plans,
+America \citep{Assal2019}. The reasons are (1) there are no formal test plans,
 (2) lack of knowledge regarding testing tools. Though respondents do not think
-about product security initially, it is recommended\citep{Chandra2009,Azham2011}
+about product security initially, it is recommended \citep{Chandra2009,Azham2011}
 to plan security tests and product security from the design phase.
 
 Modern frameworks provide the basic security of the solution. Moreover, some
@@ -124,9 +148,41 @@ software capability to scale; however, we observe only one scalability type
 (load scalability) in our responses. To obtain software scalability use of cloud
 services is one of the most popular strategies\citep{Gao2011}. Another popular
 strategy is the use of microservice. Microservice and cloud services together
-allow the user to scale up and down any system dynamically. Cáceres et
+allow the user to scale up and down any system dynamically. C\'{a}ceres et
 al.\citep{Cceres2010} reported that cloud services and microservice-based
 architecture are generally used together to ensure scalability. In the
 Bangladesh SE industry, this practice may be prevalent. The use of cloud service
 and efficient use of architecture are the second and third most popular topic
 among our respondents.
+
+Overall, the findings show that much need to be done to ensure proper security and performance measures 
+in the software development practices of emerging countries. Multi-faceted efforts are warranted like 
+development of affordable tools and techniques for the emerging countries, enforcement of widely-accepted and 
+measurable industry standards across the regions, and the proper training of the security and performance 
+principles to the developers in emerging countries. 
+
+\bf{\ul{Industry Leaders.}} This study found that the Bangladesh software
+industry lags in adopting some of the current industry trends. Bangladesh can be
+a good marketplace for cloud companies like Microsoft, Google, and Amazon if
+they provide an affordable package for the software companies operating here.
+Local entrepreneurs may also think of building cost-effective local public
+clouds along with providing some common DevOps services.
+
+Moreover, we have found most of the participants in our study are engaged in web
+technology. This may indicate that the web is the most popular form among users
+of Bangladesh. This observation can help the industry owners to select
+appropriate medium while targeting users of this region. %We have identified
+common practices of the practitioners of the Bangladesh software industry.
+
+Finally, we have identified that the
+participation of female in the Bangladesh SE industry is comparatively less than
+that of male engineers (see Section \ref{analysis by gender}). Hussain et al.\citep{Hussain2020} expressed a
+concern that there may be bias in the hiring process of the industry. Overall, the under-representation of 
+females and minorities in software industries worldwide is a prevalent and ongoing concern. 
+This was also reported in the 2020 Stack Overflow developer survey, where more than 90\% respondents 
+were males. Our findings confirm similar trends in Bangladesh. Therefore, proper measures 
+need to be taken to encourage equity, diversity, and inclusion in software industries across the regions.  
+Such measures may be better enforced by tailoring the measures to region-specific cultural attributes.
+%Further
+%research may be conducted to identify the inherent reason behind these facts.
+

@@ -1,59 +1,81 @@
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
+
+\newcolumntype{v}{>{\hsize=.15\hsize}X}
+\newcolumntype{m}{>{\hsize=.25\hsize}X}
+\newcolumntype{y}{>{\hsize=.35\hsize}X}
 \begin{table}[!ht]
-\caption{Comparison of security, performance, scalability between our findings and prior findings}
-\begin{tabular}{llll}
-
-\hline
-\multicolumn{1}{c}{\textbf{Practices}} & \multicolumn{1}{c}{\textbf{Our Study}} & \multicolumn{1}{c}{\textbf{Prior Study}} & \multicolumn{1}{c}{\textbf{Comparison}} \\ 
-\hline
-
-\multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.1\textwidth}{
-How are the security and performance is ensured in a product of a company?
-}}}
-
-&
-
-\multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.22\textwidth}{
-(1) The practice of security architecture and security testing as a security measure are not prevalent in the Bangladesh SE industry. (2) Performance testing and peer review are the two least practiced performance measure in the Bangladesh SE industry. (3) Cloud service and architecture are two of the top three scalability measures.
-}}} 
-
-&
-
-\multicolumn{1}{l|}{\comparisoncell{0.30}{
-\vspace{13pt} Security testing is found to be the least practiced in the software industry in Turkey\citep{Garousi2015}, Malaysia\citep{Farvin2016}, India\citep{Bahl2011}, and New Zealand\citep{Sung2006}
-}}                                                          
-
-& 
-
-\multirow{3}{*}{\parbox{0.22\textwidth}{
-We found that the practice of `no security' measures is less in Bangladesh compared to other countries. Though the practice of security testing Bangladesh has similarities with other countries, it lags behind the practices of matured industries. However, like the matured and grown software industries, cloud service is a popular measure in Bangladesh.
-}} 
-\\ \cline{3-3}
-
-\multicolumn{1}{l|}{}                                       
-& 
-\multicolumn{1}{l|}{}                                       
-&
-
-\multicolumn{1}{l|}{\comparisoncell{0.30}{
-\vspace{13pt} Performance testing is a common practice in some \citep{Garousi2013,Garousi2015,Phillips2003} SE industry. However, it is hardly practiced in the Pakistan\citep{Jahan2019} SE industry. Also, peer review is a common practice among Turkish\citep{Garousi2015} developers.
-}}                                                          
-
-& 
-\\ \cline{3-3}
-\multicolumn{1}{l|}{}                                       
-& 
-\multicolumn{1}{l|}{}  
-& 
-
-\multicolumn{1}{l|}{\comparisoncell{0.30}{
-\vspace{13pt} To ensure scalability, there are many practices prevalent in other countries' SE industry, such as micro-service architecture\citep{Laihonen2018} and containerization technologies\citep{Hussain2017}.
-}} 
-& 
-\\ \hline
-
-
-\end{tabular}
-\label{table:open_ended_comparison}
+    \centering
+    \caption{Comparison of security, performance, scalability between our findings and prior findings}
+    % \label{table:open_ended_comparison}
+    \begin{tabularx}{\textwidth}{v|m|y|m}
+    \hline
+    \textbf{Practices}& \textbf{Our Study}& \textbf{Prior Study}& \textbf{Comparison}\\ \hline
+    
+    \multirow{3}{=}{How are the security and performance is ensured in a product of a company?} & \multirow{3}{=}{(1) Security architecture, security testing, performance testing, and peer review are less prevalent in the Bangladesh SE industry. (2) Cloud service and architecture are two of the top three scalability measures.} &  Previous studies \citep{Garousi2015, Farvin2016, Bahl2011, Sung2006} found that security testing is least practiced in the emerging software industries.& \multirow{3}{=}{In the practice of security testing, Bangladesh lags behind the practices of matured industries. However, the practice of `no security' measures is less in Bangladesh compared to other emerging SE industries.} \\ \cline{3-3}
+    
+                  &                   &  Though performance testing\citep{Garousi2013,Garousi2015,Phillips2003} and peer review \citep{Garousi2015} is a common practice in some \citep{Garousi2013,Garousi2015,Phillips2003} SE industry it is hardly practiced in the emerging \citep{Jahan2019} SE industries.           &                   \\ \cline{3-3}
+                  &                   & In some SE industries, micro-service architecture~\citep{Laihonen2018} and containerization technologies~\citep{Hussain2017} are used to ensure scalability.            &                   \\ \hline
+    \end{tabularx}
 \end{table}
+
+
+
+
+% % Please add the following required packages to your document preamble:
+% % \usepackage{multirow}
+% \begin{table}[!ht]
+% \caption{Comparison of security, performance, scalability between our findings and prior findings}
+% \begin{tabular}{llll}
+
+% \hline
+% \multicolumn{1}{c}{\textbf{Practices}} & \multicolumn{1}{c}{\textbf{Our Study}} & \multicolumn{1}{c}{\textbf{Prior Study}} & \multicolumn{1}{c}{\textbf{Comparison}} \\ 
+% \hline
+
+% \multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.1\textwidth}{
+% How are the security and performance is ensured in a product of a company?
+% }}}
+
+% &
+
+% \multicolumn{1}{l|}{\multirow{3}{*}{\parbox{0.22\textwidth}{
+% (1) Security architecture, security testing, performance testing, and peer review are less prevalent in the Bangladesh SE industry. (2) Cloud service and architecture are two of the top three scalability measures.
+% }}} 
+
+% &
+
+% \multicolumn{1}{l|}{\comparisoncell{0.30}{
+% \vspace{13pt} Previous studies \citep{Garousi2015, Farvin2016, Bahl2011, Sung2006} found that security testing is least practiced in the emerging software industries.
+% }}                                                          
+
+% & 
+
+% \multirow{3}{*}{\parbox{0.22\textwidth}{
+% We found that the practice of `no security' measures is less in Bangladesh compared to other countries. Though the practice of security testing Bangladesh has similarities with other countries, it lags behind the practices of matured industries. However, like the matured and grown software industries, cloud service is a popular measure in Bangladesh.
+% }} 
+% \\ \cline{3-3}
+
+% \multicolumn{1}{l|}{}                                       
+% & 
+% \multicolumn{1}{l|}{}                                       
+% &
+
+% \multicolumn{1}{l|}{\comparisoncell{0.30}{
+% \vspace{13pt} Though performance testing\citep{Garousi2013,Garousi2015,Phillips2003} and peer review \citep{Garousi2015} is a common practice in some \citep{Garousi2013,Garousi2015,Phillips2003} SE industry it is hardly practiced in the emerging \citep{Jahan2019} SE industries.
+% }}                                                          
+
+% & 
+% \\ \cline{3-3}
+% \multicolumn{1}{l|}{}                                       
+% & 
+% \multicolumn{1}{l|}{}  
+% & 
+
+% \multicolumn{1}{l|}{\comparisoncell{0.30}{
+% \vspace{13pt} To ensure scalability, there are many practices prevalent in other countries' SE industry, such as micro-service architecture\citep{Laihonen2018} and containerization technologies\citep{Hussain2017}.
+% }} 
+% & 
+% \\ \hline
+
+
+% \end{tabular}
+% \label{table:open_ended_comparison}
+% \end{table}

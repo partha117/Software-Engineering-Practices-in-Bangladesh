@@ -13,12 +13,42 @@ We asked five questions to determine the adoption of testing and devops techniqu
 \item Version Control (Q18).
 \end{inparaenum}
 
-\begin{figure}[h]
-\centering
-  \includegraphics[scale=0.2]{Figures/Respondents_testing_practices}
-  \caption{Software Testing Practices (Q14)}
-  \label{fig:testing}
+\begin{figure}[t]
+    \centering
+    \caption{Software testing and devops practices used by the respondents}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[scale=0.1]{Figures/Respondents_testing_practices}
+        \caption{Software Testing Practices (Q14)}
+        \label{fig:testing}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[scale=0.09]{Figures/Respondents_autotest_level}
+        \caption{Level of Automated Testing (Q15)}
+        \label{fig:autoTest}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[scale=0.1]{Figures/Respondents_testing_tools}
+        \caption{Tools Used in Testing and QA (Q16)}
+        \label{fig:testingTools}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[scale=0.1]{Figures/Respondents_deployment_tools}
+        \caption{Continuous Deployment tools (Q17)}
+        \label{fig:deployTools}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+        \includegraphics[scale=0.12]{Figures/Respondents_version_control}
+        \caption{Version Control (Q18)}
+        \label{fig:versionControl}
+    \end{subfigure}
 \end{figure}
+
+% \begin{figure}[h]
+% \centering
+%   \includegraphics[scale=0.2]{Figures/Respondents_testing_practices}
+%   \caption{Software Testing Practices (Q14)}
+%   \label{fig:testing}
+% \end{figure}
 \nd\bf{$\bullet$ Software Testing Practices (Q14)}. According to Figure \ref{fig:testing}, several testing practices are used during
 software development. The results show that most of the organizations have
 carried out unit testing (53\%), functional testing (49\%), user acceptance
@@ -38,40 +68,60 @@ significant ($p<0.01$).
 
 \begin{figure}[h]
 \centering
-  \includegraphics[scale=0.6]{Figures/Testing_Type_and_Experience}
+  \includegraphics[scale=0.45]{Figures/Testing_Type_and_Experience}
   \caption{Testing practices ans professional experience}
   \label{fig:testing type and experience}
 \end{figure}
-\begin{figure}[h]
-\centering
-  \includegraphics[scale=0.15]{Figures/Respondents_autotest_level}
-  \caption{Level of Automated Testing (Q15)}
-  \label{fig:autoTest}
+
+% \begin{figure}[h]
+% \centering
+%   \includegraphics[scale=0.15]{Figures/Respondents_autotest_level}
+%   \caption{Level of Automated Testing (Q15)}
+%   \label{fig:autoTest}
+% \end{figure}
+
+\begin{figure}[t]
+    \centering
+    \caption{Analysis of automated testing level}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[scale=0.4]{Figures/Language_and_Test_Level}
+          \caption{Programming language and automated testing level}
+          \label{fig:language and autotest}
+    \end{subfigure}
+    \begin{subfigure}{0.4\textwidth}
+          \includegraphics[scale=0.4]{Figures/Framework_and_Test_Level}
+          \caption{Framework and automated testing level}
+          \label{fig:framework and autotest}
+    \end{subfigure}
 \end{figure}
-\begin{figure}[h]
-\centering
-  \includegraphics[scale=0.65]{Figures/Language_and_Test_Level}
-  \caption{Programming language and automated testing level}
-  \label{fig:language and autotest}
-\end{figure}
-\begin{figure}[h]
-\centering
-  \includegraphics[scale=0.65]{Figures/Framework_and_Test_Level}
-  \caption{Framework and automated testing level}
-  \label{fig:framework and autotest}
-\end{figure}
-\begin{figure}[h]
-\centering
-  \includegraphics[scale=0.45]{Figures/Auto_Test_and_Experience}
-  \caption{Experience and automated testing level}
-  \label{fig:experience and autotest}
-\end{figure}
+
+% \begin{figure}[h]
+% \centering
+%   \includegraphics[scale=0.65]{Figures/Language_and_Test_Level}
+%   \caption{Programming language and automated testing level}
+%   \label{fig:language and autotest}
+% \end{figure}
+
+% \begin{figure}[h]
+% \centering
+%   \includegraphics[scale=0.65]{Figures/Framework_and_Test_Level}
+%   \caption{Framework and automated testing level}
+%   \label{fig:framework and autotest}
+% \end{figure}
+
+% \begin{figure}[h]
+% \centering
+%   \includegraphics[scale=0.45]{Figures/Auto_Test_and_Experience}
+%   \caption{Experience and automated testing level}
+%   \label{fig:experience and autotest}
+% \end{figure}
 \nd\bf{$\bullet$ Level of Automated Testing (Q15).}
 We have asked the survey participants about the level of automated testing
 performed in their respective companies. The responses were gathered using the
 Likert scale. It was found that different respondents have very different
 experiences in this context, i.e., some companies heavily practice automated
-testing, while others favor manual testing.  Results are shown in Figure
+testing, while others favor manual testing. 
+Results are shown in Figure
 \ref{fig:autoTest}, which indicates that about 70\% of our respondents (others
 than who voted for level 5) do not use automated testing regularly. The level of
 automated testing might be related to the programming language/framework. The
@@ -88,20 +138,19 @@ performed in Android, Express, Node.js, Struts, and Java EE framework, and the
 observation is statistically significant ($p=0.006$). Also, the highest level of
 automated testing is mainly used by developers (unit testing). 
 Managers practice the lowest level of automated testing. We observed that managers mainly engaged in assessing the
-acceptability of the product from the end-user point of view. We plotted developer experience vs automated test levels in
-Figure \ref{fig:experience and autotest}. Junior developers tend to use more automated testing than senior
+acceptability of the product from the end-user point of view. We also observed that Junior developers tend to use more automated testing than senior
 developers. However, the observation is not statistically significant
 ($p=0.08$). One reason behind this observation may be that the senior
 developers perform GUI testing more, which are hard to
 automate.
 
 
-\begin{figure}[h]
-\centering
-  \includegraphics[scale=0.18]{Figures/Respondents_testing_tools}
-  \caption{Tools Used in Testing and QA (Q16)}
-  \label{fig:testingTools}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+%   \includegraphics[scale=0.18]{Figures/Respondents_testing_tools}
+%   \caption{Tools Used in Testing and QA (Q16)}
+%   \label{fig:testingTools}
+% \end{figure}
 \nd\bf{$\bullet$ Tools Used in Testing and QA (Q16).} Most of the
 respondents have used XUnit (e.g., JUnit, NUnit) (30\%), Selenium (27\%),
 Jenkins (20\%), others (9\%) (see Figure \ref{fig:testingTools}). Around
@@ -115,12 +164,12 @@ are not supposed to be involved in any testing themselves.
 
 %\boxtext{There has a large demand of software testing tools in Bangladesh.}
 
-\begin{figure}[h]
-\centering
-  \includegraphics[scale=0.18]{Figures/Respondents_deployment_tools}
-  \caption{Continuous Deployment tools (Q17)}
-  \label{fig:deployTools}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+%   \includegraphics[scale=0.18]{Figures/Respondents_deployment_tools}
+%   \caption{Continuous Deployment tools (Q17)}
+%   \label{fig:deployTools}
+% \end{figure}
 
 \nd\bf{$\bullet$ Continuous Deployment tools (Q17).} majority of the respondents deploy their implemented codes using AWS code-deploy
 (12\%) and Jenkins (12\%) (Figure \ref{fig:deployTools}). The other deployment tools are Bamboo (5\%), TeamCity
@@ -143,15 +192,15 @@ deployment is not widespread yet.
 %hypothesis is not statistically significant ($p=0.37$).
 %\rifat{We are saying implicitly that the survey is for developers, not for QA and DevOps engineers. Is it OK?}
 
-\begin{figure}[h]
-\centering
-  \includegraphics[scale=0.16]{Figures/Respondents_version_control}
-  \caption{Version Control (Q18)}
-  \label{fig:versionControl}
-\end{figure}
+% \begin{figure}[h]
+% \centering
+%   \includegraphics[scale=0.16]{Figures/Respondents_version_control}
+%   \caption{Version Control (Q18)}
+%   \label{fig:versionControl}
+% \end{figure}
 \nd\bf{$\bullet$ Version Control (Q18).} Git (78\%) and Bitbucket (29\%) are mostly-used
-version control systems in the software industry as shown in Figure
-\ref{fig:versionControl}. Besides these, Subversion (SVN) (5\%) and others (4\%)
+version control systems in the software industry.% as shown in Figure \ref{fig:versionControl}. 
+ Besides these, Subversion (SVN) (5\%) and others (4\%)
 are used.  Respondents were allowed to select more than one option. The 2018
 Stack overflow survey\citep{StackoverflowSurvey2018} reports that the most
 popular version control system is Git (87.2\% developer uses Git) and the second

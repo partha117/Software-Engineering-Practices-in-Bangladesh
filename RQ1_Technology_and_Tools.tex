@@ -8,18 +8,47 @@ We ask five questions related to the adoption of technologies and tools by the p
 \item Framework (Q12).
 \item IDE (Q13).
 \end{inparaenum}
+
 \begin{figure}[t]
-\centering
-  \includegraphics[scale=0.18]{Figures/Respondents_Technologies}
-  \caption{Technology Platforms (Q9)}
-  \label{fig:platforms}
+    \centering
+    \caption{Software development tools and techniques used by the respondents}
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[scale=0.1]{Figures/Respondents_Technologies}
+        \caption{Technology Platforms (Q9)}
+        \label{fig:platforms}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+          \includegraphics[scale=0.1]{Figures/Respondents_os}
+          \caption{Operating Systems (Q10)}
+          \label{fig:os}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+          \includegraphics[scale=0.10]{Figures/Respondents_languages}
+          \caption{Languages used in software development (Q11)}
+          \label{fig:languages}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+          \includegraphics[scale=0.10]{Figures/Respondents_frameworks}
+          \caption{Frameworks used in development (Q12)}
+          \label{fig:frameworks}
+    \end{subfigure}
+    \begin{subfigure}{0.6\textwidth}
+          \includegraphics[scale=0.12]{Figures/Respondents_IDEs}
+          \caption{IDEs used by the respondents (Q13)}
+          \label{fig:IDEs}
+    \end{subfigure}
 \end{figure}
+
+% \begin{figure}[t]
+% \centering
+%   \includegraphics[scale=0.18]{Figures/Respondents_Technologies.eps}
+%   \caption{Languages used in software development (Q11)}
+%   \label{fig:languages}
+% \end{figure}
 
 \nd\bf{$\bullet$ Technology platforms (Q9).} 80\%  of survey respondents work for the web
 platform (Figure \ref{fig:platforms}). The rests are mobile (45\%), desktop (30\%), embedded/IoT
-(8\%). This distribution is similar to the 2020 wordwide survey of JetBrains \citep{JetBrains2020}, which finds that 
-websites are the
-most common type of application developers work on, and the web platform is the
+(8\%). This distribution is similar to the 2020 wordwide survey of JetBrains \citep{JetBrains2020}, which finds that websites are the most common type of application developers work on, and the web platform is the
 most preferable and popular to develop, followed by desktop and mobile. We have conducted a cross-aspect analysis to identify any relationship
 between the technology platform and the requirement gathering process. The
 bubble charts in Figure \ref{fig:requirement technology cross analysis}
@@ -29,28 +58,24 @@ requirement gathering process is mostly practiced in GUI-based development
 
 \begin{figure}[t]
 \centering
-  \includegraphics[scale=0.47]{Figures/Requirement_Technology_Cross_Analysis.eps}
+  \includegraphics[scale=0.3]{Figures/Requirement_Technology_Cross_Analysis.eps}
   \caption{Cross aspect analysis of requirement gathering and technology platform}
   \label{fig:requirement technology cross analysis}
 \end{figure}
 
 \nd\bf{$\bullet$ Operating Systems (Q10).} Most of our
-respondents preferred Linux based operating system (56\%) for their development (Figure \ref{fig:os}). The second frequently used
-operating system is Windows (45\%) followed by MacOS (28\%). We
+respondents preferred Linux based operating system (56\%) for their development (Figure \ref{fig:os}). 
+The second frequently used operating system is Windows (45\%) followed by MacOS (28\%). We
 observed similar scenarios in the 2018 and 2019 StackOverflow (SO) surveys
-\citep{StackoverflowSurvey2018,StackoverflowSurvey2019}. However, Windows ranked
-first in the 2020 survey of both SO and JetBrains \citep{StackoverflowSurvey2020,
-JetBrains2020}. The recent higher preference towards Windows could be due to the newly
-included WSL (Windows Subsystem for Linux). This feature allows users to perform
-almost any Linux-specific task on Windows. We anticipated that the use of OS
-might be related to professional experience. Among the participants,
-senior/expert developers (those with at least 5 years of experience) have significantly higher rates of Linux usage ($p=0.024$ based on Mann Whitney U test). 
-\begin{figure}[h]
-\centering
-  \includegraphics[scale=0.17]{Figures/Respondents_os}
-  \caption{Operating Systems (Q10)}
-  \label{fig:os}
-\end{figure}
+\citep{StackoverflowSurvey2018, StackoverflowSurvey2019}. However, Windows ranked
+first in the 2020 survey of both SO and JetBrains \citep{StackoverflowSurvey2020, JetBrains2020}. The recent higher preference towards Windows could be due to the newly included WSL (Windows Subsystem for Linux) that allows users to perform almost any Linux-specific task on Windows. 
+We anticipated that the use of OS might be related to professional experience. Among the participants, senior/expert developers (those with at least 5 years of experience) have significantly higher rates of Linux usage ($p=0.024$ based on Mann Whitney U test).
+% \begin{figure}[h]
+% \centering
+%   \includegraphics[scale=0.17]{Figures/Respondents_os}
+%   \caption{Operating Systems (Q10)}
+%   \label{fig:os}
+% \end{figure}
 
 \nd\bf{$\bullet$ Programming Languages (Q11).} Around 65\% and 60\% of our respondents use JavaScript and
 Java, respectively, which are the two most used languages in Bangladesh (Figure
@@ -68,12 +93,12 @@ Javascript as programming languages. However, this is not statistically
 significant ($p=0.1$). Though the use of the operating system can be influenced by
 programming language (e.g., Swift and macOS), we do not find any significant correlation
 between the two choices.
-\begin{figure}[t]
-\centering
-  \includegraphics[scale=0.18]{Figures/Respondents_languages}
-  \caption{Languages used in software development (Q11)}
-  \label{fig:languages}
-\end{figure}
+% \begin{figure}[t]
+% \centering
+%   \includegraphics[scale=0.18]{Figures/Respondents_languages}
+%   \caption{Languages used in software development (Q11)}
+%   \label{fig:languages}
+% \end{figure}
 
 \nd\bf{$\bullet$ Frameworks used in development (Q12).} As shown in Figure \ref{fig:frameworks} Spring boot (37\%) is the most used in the Bangladesh software industry. 
 This observation is aligned with the result of Java's usage rate corresponding
@@ -93,18 +118,19 @@ noticed that JavaScript-based frameworks (e.g., Jacqueline, Angular, React,
 Node.js) occupy the top positions (top five), which is not the case for our
 survey.
 
-\begin{figure}[t]
-\centering
-  \includegraphics[scale=0.18]{Figures/Respondents_frameworks}
-  \caption{Frameworks used in development (Q12)}
-  \label{fig:frameworks}
-\end{figure}
-\begin{figure}[t]
-\centering
-  \includegraphics[scale=0.18]{Figures/Respondents_IDEs}
-  \caption{IDEs used by the respondents (Q13)}
-  \label{fig:IDEs}
-\end{figure}
+% \begin{figure}[t]
+% \centering
+%   \includegraphics[scale=0.18]{Figures/Respondents_frameworks}
+%   \caption{Frameworks used in development (Q12)}
+%   \label{fig:frameworks}
+% \end{figure}
+
+% \begin{figure}[t]
+% \centering
+%   \includegraphics[scale=0.18]{Figures/Respondents_IDEs}
+%   \caption{IDEs used by the respondents (Q13)}
+%   \label{fig:IDEs}
+% \end{figure}
 \nd\bf{$\bullet$ IDEs used by the respondents (Q13).} As shown in Figure \ref{fig:IDEs},
 IntelliJ, is used by most respondents (43\%). IntelliJ is a Java integrated development tool for developing software for the
 enterprise, mobile, and web application, The
